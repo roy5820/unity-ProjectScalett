@@ -1,0 +1,68 @@
+{
+  "talkDataList": [
+    {
+      "talkID": "1001",
+      "sceneName": "testScene2",
+      "talkName": "프롤로그 대화 feet 조수",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "으아! 뭔일이야",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan_nomal"
+        },
+        {
+          "lineNum": 2,
+          "log": "203호에서 누가 죽었나봐요!",
+          "speakerId": "302",
+          "spriteName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "어서 가봐야겠어",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan_angry"
+        }
+      ]
+    },
+    {
+      "talkID": "5001",
+      "sceneName": "Anywhere",
+      "talkName": "GetItem에 아이템 중복 획득할 시",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "더 이상 찾을게 없어 보인다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan_nomal"
+        }
+      ]
+    },
+    {
+      "talkID": "5002",
+      "sceneName": "Anywhere",
+      "talkName": "GetItem에서 잠겨있을 시",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "잠겨 있어서, 열쇠가 필요할 것 같아",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan_nomal"
+        }
+      ]
+    },
+    {
+      "talkID": "5003",
+      "sceneName": "Anywhere",
+      "talkName": "DoorInteraction에서 문을 열었을때",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "문이 열렸군 이제 들어가 보자고",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan_nomal"
+        }
+      ]
+    }
+  ]
+}

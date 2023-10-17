@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8347369413724512190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8347369413724512161}
+  - component: {fileID: 8347369413724512160}
+  - component: {fileID: 315926264751153863}
+  - component: {fileID: 1342084987748324867}
+  m_Layer: 0
+  m_Name: InGameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8347369413724512161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8347369413724512190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.173532, y: 19.821873, z: 16.48237}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8347369413724512160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8347369413724512190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ef1c553c738c34799d4aeccbb4a32f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HaveDataBase:
+    UseItem: []
+    EvidenceItem: []
+    CharacterInformation:
+    - ID: 301
+      RelatedID: 0
+    - ID: 302
+      RelatedID: 0
+    CharacterTestimony:
+    - ID: 30101
+      RelatedID: 301
+    - ID: 30102
+      RelatedID: 301
+    - ID: 30201
+      RelatedID: 302
+  SelectItemId: 0
+--- !u!114 &315926264751153863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8347369413724512190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dffc8cd90809c34195f56a308ab48d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDatabase:
+    UseItems: []
+    EvidenceItems: []
+    CharcterInformation: []
+    CharacterTestimony: []
+  jsonFile: {fileID: 4900000, guid: 18e35c35831bbb94bab3689c1264dec9, type: 3}
+--- !u!114 &1342084987748324867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8347369413724512190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2a7e1b6ea706847b5ec230c6957995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TalkLogDatabase:
+    talkID: 
+    sceneName: []
+    talkName: []
+    lines: []
+  jsonFile: {fileID: 4900000, guid: a654c3ee92021c1469a4fd98d9ff240f, type: 3}

@@ -1,0 +1,51 @@
+{
+  "UseItems": [
+    {
+      "id": "101",
+      "name": "302호 열쇠",
+      "spriteName": "HotelRoom_302_Key",
+      "additionalExplanation": "302호에 가보자."
+    }
+  ],
+  "EvidenceItems": [
+    {
+      "id": "201",
+      "name": "낡은 사진",
+      "spriteName": "Picture_OldMan",
+      "additionalExplanation": "중년에 남자의 사진인것 같다."
+    }
+  ],
+  "CharcterInformation": [
+    {
+      "id": "301",
+      "name": "프렐드 매그너스",
+      "age": "45",
+      "job": "탐정",
+      "spriteName": "JamesBrennan"
+    },
+    {
+      "id": "302",
+      "name": "스칼렛 요한슨",
+      "age": "27",
+      "job": "조수",
+      "spriteName": ""
+    }
+  ],
+  "CharacterTestimony": [
+    {
+      "id": "30101",
+      "CharcterId": "301",
+      "additionalExplanation": "지배인이 수상하다."
+    },
+    {
+      "id": "30102",
+      "CharcterId": "301",
+      "additionalExplanation": "사건장소에 처음 들어갔을 떄 달콤한 냄새가 진동했다."
+    },
+    {
+      "id": "30201",
+      "CharcterId": "302",
+      "additionalExplanation": "사건 발견 전날 세벽에 벽너머 쥐같은게 돌아다니는 듯한 소리 땜에 깸."
+    }
+  ]
+}
