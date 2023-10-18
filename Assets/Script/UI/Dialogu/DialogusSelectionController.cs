@@ -60,7 +60,7 @@ public class DialogusSelectionController : MonoBehaviour
             GameManager.instance.ControllObjStatusData(1, dataName + BtnData.ButtonIndex, 1);//버튼 상태를 1(읽음)으로 설정
             //획득할 증언이 존재할 경우 인벤토리에 추가
             if (BtnData.GetTestimonyID > 0)
-                GameManager.instance.AddItem(4, BtnData.GetTestimonyID);
+                GameManager.instance.AddItem(3, BtnData.GetTestimonyID);
         }
         else if (BtnData.isStatus == 2)
         {
@@ -69,7 +69,7 @@ public class DialogusSelectionController : MonoBehaviour
                 GameManager.instance.ControllObjStatusData(1, dataName + BtnData.ButtonIndex, 1);//버튼 상태를 1(읽음)으로 설정
                 //획득할 증언이 존재할 경우 인벤토리에 추가
                 if (BtnData.GetTestimonyID > 0)
-                    GameManager.instance.AddItem(4, BtnData.GetTestimonyID);
+                    GameManager.instance.AddItem(3, BtnData.GetTestimonyID);
             }
             else
                 return;//키가 없을 경우 함수 종료
