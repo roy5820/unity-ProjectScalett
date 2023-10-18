@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4344416624c925c41b422c2b48f06f28, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb6a3a0a6e2b1c34894fb0b0f2f50fac, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -229,8 +229,9 @@ MonoBehaviour:
     TalkButtonData:
     - ButtonIndex: 1
       Button: {fileID: 1713326415420607056}
-      isLock: 0
       KeyID: 0
+      LogID: 1001
+      GetTestimonyID: 30101
       isStatus: 0
 --- !u!114 &8886947563516561429
 MonoBehaviour:

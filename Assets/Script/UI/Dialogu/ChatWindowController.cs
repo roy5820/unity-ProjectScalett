@@ -113,7 +113,7 @@ public class ChatWindowController : MonoBehaviour
         if (CallObj != null)
         {
             //오브젝트 삭제 시 대화 선택창 다시 키우기
-            GameObject.Find(CallObj.name).GetComponent<RectTransform>().localScale = new Vector2(1, 1);
+            CallObj.SetActive(true);
         }
     }
 }

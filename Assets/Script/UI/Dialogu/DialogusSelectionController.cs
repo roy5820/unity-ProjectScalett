@@ -12,7 +12,8 @@ public class TalkButtonData
     public GameObject Button;//버튼 게임오브젝트
     public int KeyID;//키 아이템 ID
     public int LogID;//불러올 대화 LogID
-    public int isStatus = 0;//버튼 상태값 0:안읽음 1: 읽음
+    public int GetTestimonyID;//획득할 증언 ID
+    public int isStatus = 0;//버튼 상태값 0:안읽음 1: 읽음 2: 잠김
 }
 
 //대화버튼 정보들을 갖는 리스트 객체
@@ -40,9 +41,46 @@ public class DialogusSelectionController : MonoBehaviour
             Button thisButton = ButtonData.Button.GetComponent<Button>();
             thisButton.onClick.AddListener(delegate { OnChatWindowOpen(ButtonData); });//버튼 
         }
+
+        LoardButtonStatus();
     }
 
     private void OnEnable()
+    {
+        LoardButtonStatus();
+    }
+
+    //버튼 클릭시 대화창을 띄우는 함수
+    //BtnIndex: 버튼 인덱스 번호, LogID: 불러올 대화로그의 ID값
+    public void OnChatWindowOpen(TalkButtonData BtnData)
+    {
+        //각 상태별 이벤트 처리
+        if (BtnData.isStatus == 0)
+        {
+            GameManager.instance.ControllObjStatusData(1, dataName + BtnData.ButtonIndex, 1);//버튼 상태를 1(읽음)으로 설정
+            //획득할 증언이 존재할 경우 인벤토리에 추가
+            if (BtnData.GetTestimonyID > 0)
+                GameManager.instance.AddItem(4, BtnData.GetTestimonyID);
+        }
+        else if (BtnData.isStatus == 2)
+        {
+            if (!GameManager.instance.ChkItem(1, BtnData.KeyID))//key Item이 인벤토리에 있는 지 체크
+            {
+                GameManager.instance.ControllObjStatusData(1, dataName + BtnData.ButtonIndex, 1);//버튼 상태를 1(읽음)으로 설정
+                //획득할 증언이 존재할 경우 인벤토리에 추가
+                if (BtnData.GetTestimonyID > 0)
+                    GameManager.instance.AddItem(4, BtnData.GetTestimonyID);
+            }
+            else
+                return;//키가 없을 경우 함수 종료
+        }
+
+        PlayerUIController.instance.OpenChatWindow(BtnData.LogID, this.gameObject);//대화창 오픈
+        this.gameObject.SetActive(false);//화면 비활성화
+    }
+
+    //버튼의 상태값 초기화 하는 함수
+    public void LoardButtonStatus()
     {
         //대화창이 활성화 될때 마다 버튼들의 이미지 및 상태값 초기화하는 부분
         foreach (TalkButtonData ButtonData in ButtonDatas.TalkButtonData)
@@ -55,41 +93,20 @@ public class DialogusSelectionController : MonoBehaviour
             }
 
             //버튼들 상태별 이미지 적용
-            if(ButtonData.isStatus > 0)
+            if (ButtonData.isStatus > 0)
             {
                 Sprite ButtonImg = null;
 
                 if (ButtonData.isStatus == 1)
-                    ButtonImg = Resources.Load<Sprite>(ImgPath + "ChatSelectButton_lock");//버튼 이미지 가져오기
+                    ButtonImg = Resources.Load<Sprite>(ImgPath + "ChatSelectButton_read");//버튼 이미지 가져오기
                 else if (ButtonData.isStatus == 2)
-                    ButtonImg = Resources.Load<Sprite>(ImgPath + "ChatSelectButton_nomal");//버튼 이미지 가져오기
-                if(ButtonImg != null)
+                    ButtonImg = Resources.Load<Sprite>(ImgPath + "ChatSelectButton_lock");//버튼 이미지 가져오기
+                if (ButtonImg != null)
                     ButtonData.Button.GetComponent<Image>().sprite = ButtonImg; //버튼 이미지 적용
             }
-            
-        }
-    }
-
-    private void Update()
-    {
-        
-    }
-
-    //버튼 클릭시 대화창을 띄우는 함수
-    //BtnIndex: 버튼 인덱스 번호, LogID: 불러올 대화로그의 ID값
-    public void OnChatWindowOpen(TalkButtonData BtnData)
-    {
-        //각 상태별 이벤트 처리
-        if (BtnData.isStatus == 0)
-        {
 
         }
-        else if (BtnData.isStatus == 2)
-        {
-        }
     }
-
-  
 
     //대화선택창 닫기 이벤트
     public void OnSelectWindowClose()
