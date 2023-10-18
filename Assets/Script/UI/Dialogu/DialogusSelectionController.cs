@@ -64,7 +64,7 @@ public class DialogusSelectionController : MonoBehaviour
         }
         else if (BtnData.isStatus == 2)
         {
-            if (!GameManager.instance.ChkItem(1, BtnData.KeyID))//key Item이 인벤토리에 있는 지 체크
+            if (GameManager.instance.ChkItem(1, BtnData.KeyID))//key Item이 인벤토리에 있는 지 체크
             {
                 GameManager.instance.ControllObjStatusData(1, dataName + BtnData.ButtonIndex, 1);//버튼 상태를 1(읽음)으로 설정
                 //획득할 증언이 존재할 경우 인벤토리에 추가
@@ -73,6 +73,7 @@ public class DialogusSelectionController : MonoBehaviour
             }
             else
                 return;//키가 없을 경우 함수 종료
+            Debug.Log(BtnData.isStatus);
         }
 
         PlayerUIController.instance.OpenChatWindow(BtnData.LogID, this.gameObject);//대화창 오픈
