@@ -232,7 +232,7 @@ MonoBehaviour:
       KeyID: 0
       LogID: 1001
       GetTestimonyID: 30101
-      isStatus: 2
+      isStatus: 0
 --- !u!114 &8886947563516561429
 MonoBehaviour:
   m_ObjectHideFlags: 0
