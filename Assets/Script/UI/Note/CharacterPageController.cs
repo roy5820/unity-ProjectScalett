@@ -38,6 +38,7 @@ public class CharacterPageController : MonoBehaviour
             Sprite CharacterSprite = Resources.Load<Sprite>(ImgPath + CharacterData.spriteName);//스프라이트 이미지 가져오기
 
             LeftPageCharacterImage.GetComponent<Image>().sprite = CharacterSprite;//캐릭터 이미지 적용
+            LeftPageCharacterImage.SetActive(true); //캐릭터 이미지 비활성화
             LeftPageCharacterName.GetComponent<Text>().text = CharacterData.name;//캐릭터 이름
             LeftPageCharacterAge.GetComponent<Text>().text = CharacterData.age;//캐릭터 나이
             LeftPageCharacterJob.GetComponent<Text>().text = CharacterData.job;//캐릭터 직업
@@ -63,7 +64,12 @@ public class CharacterPageController : MonoBehaviour
         //없으면 공백으로 초기화
         else
         {
-            
+            LeftPageCharacterImage.GetComponent<Image>().sprite = null;//캐릭터 이미지 null로 초기화
+            LeftPageCharacterImage.SetActive(false); //캐릭터 이미지 활성화
+            LeftPageCharacterName.GetComponent<Text>().text = null;//캐릭터 이름 null로 초기화
+            LeftPageCharacterAge.GetComponent<Text>().text = null;//캐릭터 나이 null로 초기화
+            LeftPageCharacterJob.GetComponent<Text>().text = null;//캐릭터 직업 null로 초기화
+            LeftPageTestimony.GetComponent<Text>().text = null; //증언 null로 초기화
         }
 
         //인벤토리의 인물정보 오른쪽 페이지에 보여주기
@@ -74,6 +80,7 @@ public class CharacterPageController : MonoBehaviour
             Sprite CharacterSprite = Resources.Load<Sprite>(ImgPath + CharacterData.spriteName);//스프라이트 이미지 가져오기
 
             RightPageCharacterImage.GetComponent<Image>().sprite = CharacterSprite;//캐릭터 이미지 적용
+            RightPageCharacterImage.SetActive(true); //캐릭터 이미지 활성화
             RightPageCharacterName.GetComponent<Text>().text = CharacterData.name;//캐릭터 이름
             RightPageCharacterAge.GetComponent<Text>().text = CharacterData.age;//캐릭터 나이
             RightPageCharacterJob.GetComponent<Text>().text = CharacterData.job;//캐릭터 직업
@@ -100,7 +107,12 @@ public class CharacterPageController : MonoBehaviour
         //없으면 공백으로 초기화
         else
         {
-            
+            RightPageCharacterImage.GetComponent<Image>().sprite = null;//캐릭터 이미지 null로 초기화
+            RightPageCharacterImage.SetActive(false); //캐릭터 이미지 비활성화
+            RightPageCharacterName.GetComponent<Text>().text = null;//캐릭터 이름 null로 초기화
+            RightPageCharacterAge.GetComponent<Text>().text = null;//캐릭터 나이 null로 초기화
+            RightPageCharacterJob.GetComponent<Text>().text = null;//캐릭터 직업 null로 초기화
+            RightPageTestimony.GetComponent<Text>().text = null; //증언 null로 초기화
         }
 
         //인벤토리의 증거 개수와 현제 페이지에 따른 TrunPage버튼 활성화/비활성화

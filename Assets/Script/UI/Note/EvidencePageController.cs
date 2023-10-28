@@ -32,12 +32,14 @@ public class EvidencePageController : MonoBehaviour
             Sprite EvidenceSprite = Resources.Load<Sprite>(ImgPath + LeftEvidenceData.spriteName);//스프라이트 이미지 가져오기
 
             LeftPageImage.GetComponent<Image>().sprite = EvidenceSprite;//이미지 적용
+            LeftPageImage.SetActive(true);//이미지 객체 활성화
             LeftPageExplanation.GetComponent<Text>().text = LeftEvidenceData.additionalExplanation;//증거 설명 적용
         }
         //없으면 공백으로 초기화
         else
         {
             LeftPageImage.GetComponent<Image>().sprite = null;//이미지 초기화
+            LeftPageImage.SetActive(false);//이미지 객체 비활성화
             LeftPageExplanation.GetComponent<Text>().text = null;//증거설명 초기화
         }
 
@@ -49,12 +51,14 @@ public class EvidencePageController : MonoBehaviour
             Sprite EvidenceSprite = Resources.Load<Sprite>(ImgPath + RightEvidenceData.spriteName);//스프라이트 이미지 가져오기
 
             RightPageImage.GetComponent<Image>().sprite = EvidenceSprite;//이미지 적용
+            RightPageImage.SetActive(true); // 이미지 객체 활성화
             RightPageExplanation.GetComponent<Text>().text = RightEvidenceData.additionalExplanation;//증거 설명 적용
         }
         //없으면 공백으로 초기화
         else
         {
             RightPageImage.GetComponent<Image>().sprite = null;//이미지 초기화
+            RightPageImage.SetActive(false); // 이미지 객체 비활성화
             RightPageExplanation.GetComponent<Text>().text = null;//증거설명 초기화
         }
 

@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventCutsceneGeneratorController : MonoBehaviour
+public class OpenWindowEventColtroller : MonoBehaviour
 {
-    public string CutSceneImageName = "";
+    public GameManager WindowPre; //¶ç¿ï Ã¢ ÇÁ¸®Æé
+
     void Start()
     {
         

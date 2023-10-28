@@ -139,4 +139,10 @@ public class PlayerUIController : MonoBehaviour
             Prefap.SetActive(true);//프리펩 활성화
         }
     }
+
+    //CutScene창 띄우는 함수
+    public void OpenCutSceneWindow(GameObject WindowPre, int ChatLogID)
+    {
+
+    }
 }
