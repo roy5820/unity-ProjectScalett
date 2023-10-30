@@ -43,7 +43,6 @@ public class DialogusSelectionController : MonoBehaviour
             Button thisButton = ButtonData.Button.GetComponent<Button>();
             thisButton.onClick.AddListener(delegate { OnChatWindowOpen(ButtonData); });//버튼 
         }
-
         LoardButtonStatus();
     }
 
@@ -81,25 +80,28 @@ public class DialogusSelectionController : MonoBehaviour
         {
             //버튼들의 상태값을 데이터베이스에서 가져와 초기화 하는 부분 
             int getStatus = GameManager.instance.ControllObjStatusData(0, dataName + ButtonData.ButtonIndex, 0);//데이터 명 뒤에 버튼의 인덱스번호 붙여서 데이터가져오기
-            if (getStatus >= 0)
+            if (getStatus > -1) {
+                ButtonData.isStatus = getStatus;
+            }
+
+            if (ButtonData.isStatus >= 0)
             {
                 //키 아이템을 가지고 있을 시 잠김(2) 상태의 대화버튼 안읽음(0) 상태로 설정
-                if (getStatus == 2 && GameManager.instance.ChkItem(1, ButtonData.KeyID)) //key Item이 인벤토리에 있는 지 체크
+                if (ButtonData.isStatus == 2 && GameManager.instance.ChkItem(1, ButtonData.KeyID)) //key Item이 인벤토리에 있는 지 체크
                 {
-                    GameManager.instance.ControllObjStatusData(1, dataName + ButtonData.ButtonIndex, 1);//버튼 상태를 1(읽음)으로 설정
+                    GameManager.instance.ControllObjStatusData(1, dataName + ButtonData.ButtonIndex, 0);//버튼 상태를 0(안읽음)으로 설정
                     getStatus = 0;
+                    ButtonData.isStatus = getStatus;
                 }
-
-                ButtonData.isStatus = getStatus;
             }
 
 
 
             //버튼들 상태별 이미지 적용
-            if (ButtonData.isStatus > 0)
-            {
+            if (ButtonData.isStatus > 0) {
+            
+                Debug.Log(ButtonData.isStatus);
                 Sprite ButtonImg = null;
-
                 if (ButtonData.isStatus == 1)
                     ButtonImg = Resources.Load<Sprite>(ImgPath + "ChatSelectButton_read");//버튼 이미지 가져오기
                 else if (ButtonData.isStatus == 2)

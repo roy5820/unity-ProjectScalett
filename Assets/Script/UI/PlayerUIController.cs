@@ -33,47 +33,41 @@ public class PlayerUIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //아이템인벤토리의 사용아이템들을 가져와서 foreach로 반복돌리기
-        int loofCnt = 0;
-
-        //사용아이템 인벤토리가 안비어 있으면 인벤토리에 아이템 화면에 띄우기
-        if (GameManager.instance.HaveDataBase.UseItem.Count > 0)
+        //사용자 사용아이템 인벤토리의 아이템목록 리스트화
+        List<DataIds> ItemIds = GameManager.instance.HaveDataBase.UseItem;
+        //각 사용아이템 칸에 아이템 이미지 적용
+        for (int i=0; i < ItemBoxs.Length; i++)
         {
-            foreach (DataIds dataid in GameManager.instance.HaveDataBase.UseItem)
+            if(i < ItemIds.Count)
             {
-                //아이템 데이터 베이스에 있는 이미지로 인벤토리의 이미지 변경
-                if (ItemBoxs.Length > loofCnt)
+                Sprite itemSprite = Resources.Load<Sprite>(ImgPath + ItemDataManager.instance.GetItemByID(ItemIds[i].ID, 0).spriteName);
+                //이미지가 비어있지 않을 시 아이템 이미지 적용
+                if (itemSprite != null)
                 {
-                    Sprite itemSprite = Resources.Load<Sprite>(ImgPath + ItemDataManager.instance.GetItemByID(dataid.ID, 0).spriteName);
-                    //이미지가 비어있지 않을 시 아이템 이미지 적용
-                    if (itemSprite != null)
-                    {
-                        ItemBoxs[loofCnt].GetComponent<Image>().sprite = itemSprite;
-                        ItemBoxs[0].SetActive(true);
-                    }
-                    //선택중인 아이템이 해당 아이템이면 아이템 박스를 키우기
-                    if (GameManager.instance.SelectItemId == dataid.ID)
-                    {
-                        ItemBoxs[loofCnt].GetComponent<RectTransform>().localScale = new Vector3(1.1f, 1.1f, 1);
-                        ItemBoxs[loofCnt].transform.parent.GetComponent<RectTransform>().localScale = new Vector3(1.2f, 1.2f, 1);
-                    }
-                    else
-                    {
-                        ItemBoxs[loofCnt].GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
-                        ItemBoxs[loofCnt].transform.parent.GetComponent<RectTransform>().localScale = new Vector3(1f, 1f, 1);
-                    }
+                    ItemBoxs[i].GetComponent<Image>().sprite = itemSprite;
+                    ItemBoxs[i].SetActive(true);
                 }
-                loofCnt++;
+
+                //선택중인 아이템이 해당 아이템이면 아이템 박스를 키우기
+                if (GameManager.instance.SelectItemId == ItemIds[i].ID)
+                {
+                    ItemBoxs[i].GetComponent<RectTransform>().localScale = new Vector3(1.1f, 1.1f, 1);
+                    ItemBoxs[i].transform.parent.GetComponent<RectTransform>().localScale = new Vector3(1.2f, 1.2f, 1);
+                }
+                else
+                {
+                    ItemBoxs[i].GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+                    ItemBoxs[i].transform.parent.GetComponent<RectTransform>().localScale = new Vector3(1f, 1f, 1);
+                }
             }
-        }
-        else
-        {
-            //인벤토리에 아이템이 없으면 첫번째간 비우기
-            ItemBoxs[0].GetComponent<Image>().sprite = null;
-            ItemBoxs[0].SetActive(false);
-            ItemBoxs[0].GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
-            ItemBoxs[loofCnt].transform.parent.GetComponent<RectTransform>().localScale = new Vector3(1f, 1f, 1);
-            GameManager.instance.SelectItemId = 0;//선택된 아이템 박스 번호 초기화
+            //빈 아이템칸은 기본값으로 설정 초기화
+            else
+            {
+                ItemBoxs[i].GetComponent<Image>().sprite = null;
+                ItemBoxs[i].SetActive(false);
+                ItemBoxs[i].GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+                ItemBoxs[i].transform.parent.GetComponent<RectTransform>().localScale = new Vector3(1f, 1f, 1);
+            }
         }
     }
 

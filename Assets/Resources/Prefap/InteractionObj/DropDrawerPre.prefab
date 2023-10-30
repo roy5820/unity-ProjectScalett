@@ -118,12 +118,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GetItemId: 101
   ChangeObj: {fileID: 0}
-  ChangeImg: {fileID: 0}
+  OpenChangeImg: {fileID: 0}
+  GetChangeImg: {fileID: 0}
   GetItemType: 0
   isLock: 0
   KeyItemId: 0
-  DuplicateMessageID: 5001
+  DuplicateMessageID: 5002
   LockMessageID: 0
+  isStatus: 0
 --- !u!114 &6041890820542408657
 MonoBehaviour:
   m_ObjectHideFlags: 0

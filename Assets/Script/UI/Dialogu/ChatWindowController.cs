@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +11,7 @@ public class ChatWindowController : MonoBehaviour
 
     public Line[] TalkLines = null; //대화로그가 저장될 배열변수 - 해당 프리펩을 생성하는 곳에서 TalkLines값을 설정해줘야함
     public int ThisLineNum; //현제 볼 Line 배열의 번호
-    string ImgPath = "Image/ConversationImg/"; //캐릭터 이미지 경로
+    string ImgPath = "Image/Character/"; //캐릭터 이미지 경로
 
     public GameObject TalkerImgBox;//말하는 캐릭터 이미지가 드러갈 이미지
     public GameObject TalkerNameBox;//말하는 캐릭터의 이름이 드러갈 이름
@@ -45,7 +44,8 @@ public class ChatWindowController : MonoBehaviour
                 GameManager.instance.AddItem(getLine.getItemType, getLine.getItemID);
 
                 //아이템 획득 시 아이템 인스펙터창 띄우기
-                PlayerUIController.instance.OpenItemInspectorWindow(getLine.getItemType, getLine.getItemID);
+                if (getLine.getItemType < 2) 
+                    PlayerUIController.instance.OpenItemInspectorWindow(getLine.getItemType, getLine.getItemID);
             }
         }
     }
@@ -55,19 +55,44 @@ public class ChatWindowController : MonoBehaviour
         //null체크
         if (TalkLines != null && TalkLines.Length > NowLineNum)
         {
-            //이미지를 가져와 있으면 적용
-            Sprite TalkerSprite = Resources.Load<Sprite>(ImgPath + TalkLines[NowLineNum].spriteName);//이미지 가져오기
-            if (TalkerSprite != null)//null 체크
-                TalkerImgBox.GetComponent<Image>().sprite = TalkerSprite;//이미지 적용
+            //null체크
+            if(TalkLines[NowLineNum].spriteName != null)
+            {
+                //이미지를 가져와 있으면 적용
+                Sprite TalkerSprite = Resources.Load<Sprite>(ImgPath + TalkLines[NowLineNum].spriteName);//이미지 가져오기
+                if (TalkerSprite != null)//null 체크
+                {
+                    TalkerImgBox.GetComponent<Image>().sprite = TalkerSprite;//이미지 적용
+                    TalkerImgBox.SetActive(true);
+                }
+                else
+                {
+                    TalkerImgBox.GetComponent<Image>().sprite = null;
+                    TalkerImgBox.SetActive(false);
+                }
+                    
+            }
             else
+            {
                 TalkerImgBox.GetComponent<Image>().sprite = null;
+                TalkerImgBox.SetActive(false);
+            }
+
 
             //말하는 사람 이름 데이터가 있으면 적용
-            string TalkerName = ItemDataManager.instance.GetCharcterByID(TalkLines[NowLineNum].speakerId).name;
-            if (TalkerName != null)//null 체크
-                TalkerNameBox.GetComponent<Text>().text = TalkerName;
+            if (TalkLines[NowLineNum].speakerId > 0)
+            {
+                string TalkerName = ItemDataManager.instance.GetCharcterByID(TalkLines[NowLineNum].speakerId).name;
+                if (TalkerName != null)//null 체크
+                    TalkerNameBox.GetComponent<Text>().text = TalkerName;
+                else
+                    TalkerNameBox.GetComponent<Text>().text = null;
+            }
             else
+            {
                 TalkerNameBox.GetComponent<Text>().text = null;
+            }
+            
 
             //대화 로그를 가져와 데이터가 있으면 적용
             string TalkLog = TalkLines[NowLineNum].log;

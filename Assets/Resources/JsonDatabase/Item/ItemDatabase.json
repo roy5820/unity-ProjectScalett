@@ -2,50 +2,106 @@
   "UseItems": [
     {
       "id": "101",
-      "name": "302호 열쇠",
-      "spriteName": "Key",
-      "additionalExplanation": "302호에 가보자."
+      "name": "201호 서랍 열쇠",
+      "spriteName": "UseItem/Key",
+      "additionalExplanation": "객실 서랍에 열쇠 같아 보인다."
+    },
+    {
+      "id": "102",
+      "name": "시계 분침",
+      "spriteName": "UseItem/ClockHandle_Min",
+      "additionalExplanation": "시계에 끼우는 분침이다"
+    },
+    {
+      "id": "103",
+      "name": "201호 문 열쇠",
+      "spriteName": "UseItem/Key",
+      "additionalExplanation": "201호의 열쇠이다."
     }
+
   ],
   "EvidenceItems": [
     {
       "id": "201",
-      "name": "하얀 가루",
-      "spriteName": "Clue_WhitePowder",
-      "additionalExplanation": "피해자를 죽인 맹독인 것 같다"
+      "name": "깨진 유리잔",
+      "spriteName": "Evidence/Clue_BrokenGlass",
+      "additionalExplanation": "유리잔이 깨져있다. 독극물을 마신거 같다."
+    },
+    {
+      "id": "202",
+      "name": "정체불명의 가루",
+      "spriteName": "Evidence/Clue_WhitePowder",
+      "additionalExplanation": "살인에 쓰인 독극물로 추정된다."
+    },
+    {
+      "id": "203",
+      "name": "얼룩이 묻어있는 러그",
+      "spriteName": "Evidence/Clue_Rug",
+      "additionalExplanation": "붉은 얼룩이 묻어있는 러그이다. 오랫동안 얼룩이 묻어있는거 같다."
+    },
+    {
+      "id": "204",
+      "name": "살인현장 사진",
+      "spriteName": "Evidence/MurderCasePhoto",
+      "additionalExplanation": "201호에서 일어난 살인사건 당시 사진. 독살에 의해서 살해당한것 같다."
     }
   ],
   "CharcterInformation": [
     {
       "id": "301",
-      "name": "프렐드 매그너스",
-      "age": "45",
+      "name": "제임슨 브레넌",
+      "age": "47",
       "job": "탐정",
-      "spriteName": "JamesBrennan"
+      "spriteName": "JamesBrennan/JamesBrennan_nomal"
     },
     {
       "id": "302",
-      "name": "스칼렛 요한슨",
-      "age": "27",
+      "name": "카밀라",
+      "age": "23",
       "job": "조수",
-      "spriteName": ""
+      "spriteName": "Kamilla/Kamilla_nomal"
+    },
+    {
+      "id": "303",
+      "name": "델라",
+      "age": "53",
+      "job": "메이드장",
+      "spriteName": "Della/Della_nomal"
+    },
+    {
+      "id": "304",
+      "name": "허먼 홈스",
+      "age": "63",
+      "job": "호텔 현 지배인",
+      "spriteName": "HermanHomes/HermanHomes_nomal"
+    },
+    {
+      "id": "305",
+      "name": "여자 직원 A",
+      "age": "37",
+      "job": "여자 메이드",
+      "spriteName": "WomanSilhouette/WomanSilhouette_nomal"
+    },
+    {
+      "id": "306",
+      "name": "남자 직원 A",
+      "age": "34",
+      "job": "남자 집사",
+      "spriteName": "ManSilhouette/ManSilhouette_nomal"
     }
+
+
   ],
   "CharacterTestimony": [
     {
-      "id": "30101",
-      "CharcterId": "301",
-      "additionalExplanation": "지배인이 수상하다."
+      "id": "30501",
+      "CharcterId": "305",
+      "additionalExplanation": "피해자의 커피를 메이드장이 집접 타줌"
     },
     {
-      "id": "30102",
-      "CharcterId": "301",
-      "additionalExplanation": "사건장소에 처음 들어갔을 떄 달콤한 냄새가 진동했다."
-    },
-    {
-      "id": "30201",
-      "CharcterId": "302",
-      "additionalExplanation": "사건 발견 전날 세벽에 벽너머 쥐같은게 돌아다니는 듯한 소리 땜에 깸."
+      "id": "30601",
+      "CharcterId": "306",
+      "additionalExplanation": "사건 전날 청소를 하던 도중 무언가 끌리는 듯한 소리를 들음"
     }
   ]
 }

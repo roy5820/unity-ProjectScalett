@@ -94,6 +94,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CallObj: {fileID: 0}
   LogID: 0
+  CallObj_Status: 0
   TalkLines: []
   ThisLineNum: 0
   TalkerImgBox: {fileID: 7311867848000303554}
