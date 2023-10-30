@@ -28,10 +28,15 @@ public class MoveArrowBtn_Controller : MonoBehaviour
         }
 
         //잠김 상태일 경우 키 아이템이 있으면 이동 가능 상태로 전환
-        if(isStatus == 1 && GameManager.instance.ChkItem(KeyItemType, KeyItemID))
+        if (isStatus == 1 && GameManager.instance.ChkItem(KeyItemType, KeyItemID))
         {
             isStatus = 0;
         }
+    }
+
+    private void Update()
+    {
+        
     }
 
     public void OnMoveScene()
@@ -43,7 +48,6 @@ public class MoveArrowBtn_Controller : MonoBehaviour
         }
         if(isStatus == 1)
         {
-            Debug.Log(isStatus);
             PlayerUIController.instance.OpenChatWindow(LockMessageID);//잠김 메시지 띄우기
         }
     }

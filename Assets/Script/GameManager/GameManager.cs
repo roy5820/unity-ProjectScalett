@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
     //플레이어 아이템 데이터베이스에 특정 아이템이 있는지 확인하는 함수
     public bool ChkItem(int ItemType, int ItemId)
     {
-        if (ItemType >= 0 && ItemId > 0)//매개변수 빈값 체크
+        if (ItemType < 0 && ItemId <= 0)//매개변수 빈값 체크
             return false;
 
         List<DataIds> thisIDs  = null;//아이템 타입별 리스트가 드러갈 변수 선언
@@ -79,12 +79,13 @@ public class GameManager : MonoBehaviour
             default:
                 return false;//맞는 아이템 타입이 없으면 종료
         }
-
         //유저 인벤토리에서 해당 아이템 검색 후 있으면 true 리턴
         foreach (DataIds id in thisIDs)
         {
             if (id.ID == ItemId)
+            {
                 return true;
+            }
         }
 
         return false;
