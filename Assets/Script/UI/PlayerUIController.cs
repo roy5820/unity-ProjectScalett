@@ -69,7 +69,7 @@ public class PlayerUIController : MonoBehaviour
         }
     }
 
-    //플레이어 방향이동 버튼 클릭시 호출(씬이동)
+    //플레이어 씬 이동 시 호출
     public void ChangeScene(string SceneName)
     {
         SceneManager.LoadScene(SceneName);
@@ -113,15 +113,16 @@ public class PlayerUIController : MonoBehaviour
             Note.SetActive(true);
     }
 
-    //대화창 띄우는 함수
-    public void OpenChatWindow(int LogID, GameObject CallObj)
+    //대화창 띄우는 함수CallObj_Status: 0:안읽음 1:읽음
+    public void OpenChatWindow(int LogID, GameObject CallObj = null, int CallObj_Status = 0)
     {
         GameObject Chatlog = Instantiate(ChatLogPre, this.transform);//대화로그 창 생성 및 해당 캔버스로 부모 설정
 
         Chatlog.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0); // 위치값 초기화
         if (CallObj != null)
             Chatlog.GetComponent<ChatWindowController>().CallObj = CallObj; //호출 오브젝트 값 설정
-        Chatlog.GetComponent<ChatWindowController>().LogID = LogID; //호출 오브젝트 값 설정
+        Chatlog.GetComponent<ChatWindowController>().LogID = LogID; //호출할 대화로그 ID 값 설정
+        Chatlog.GetComponent<ChatWindowController>().CallObj_Status = CallObj_Status; //호출 오브젝트 상태값 설정
 
         Chatlog.SetActive(true);//대화창 프리펩 활성화
     }
@@ -141,8 +142,12 @@ public class PlayerUIController : MonoBehaviour
     }
 
     //CutScene창 띄우는 함수
-    public void OpenCutSceneWindow(GameObject WindowPre, int ChatLogID)
+    public void OpenCutSceneWindow(string CutSceneName)
     {
+        string CutScenePath = "Prefap/UI/CutScene/"; //컷씬 프리펩 위치
 
+        GameObject CutScenePre = Resources.Load<GameObject>(CutScenePath + CutSceneName);//컷씬 프리펩 가져오기
+
+        GameObject Prefap = Instantiate(CutScenePre, this.transform);//컷씬 프리펩 생성
     }
 }

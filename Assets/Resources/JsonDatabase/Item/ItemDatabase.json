@@ -3,16 +3,16 @@
     {
       "id": "101",
       "name": "302호 열쇠",
-      "spriteName": "HotelRoom_302_Key",
+      "spriteName": "Key",
       "additionalExplanation": "302호에 가보자."
     }
   ],
   "EvidenceItems": [
     {
       "id": "201",
-      "name": "낡은 사진",
-      "spriteName": "Picture_OldMan",
-      "additionalExplanation": "중년에 남자의 사진인것 같다."
+      "name": "하얀 가루",
+      "spriteName": "Clue_WhitePowder",
+      "additionalExplanation": "피해자를 죽인 맹독인 것 같다"
     }
   ],
   "CharcterInformation": [

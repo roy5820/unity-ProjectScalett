@@ -4,27 +4,29 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-//대화버튼에 대한 정보를 갖는 객체
-[System.Serializable]
-public class TalkButtonData
-{
-    public int ButtonIndex;//버튼인덱스 번호
-    public GameObject Button;//버튼 게임오브젝트
-    public int KeyID;//키 아이템 ID
-    public int LogID;//불러올 대화 LogID
-    public int GetTestimonyID;//획득할 증언 ID
-    public int isStatus = 0;//버튼 상태값 0:안읽음 1: 읽음 2: 잠김
-}
 
-//대화버튼 정보들을 갖는 리스트 객체
-[System.Serializable]
-public class TalkButtonDatas
-{
-    public List<TalkButtonData> TalkButtonData;
-}
 
 public class DialogusSelectionController : MonoBehaviour
 {
+    //대화버튼에 대한 정보를 갖는 객체
+    [System.Serializable]
+    public class TalkButtonData
+    {
+        public int ButtonIndex;//버튼인덱스 번호
+        public GameObject Button;//버튼 게임오브젝트
+        public int KeyID;//키 아이템 ID
+        public int LogID;//불러올 대화 LogID
+        public int GetTestimonyID;//획득할 증언 ID
+        public int isStatus = 0;//버튼 상태값 0:안읽음 1: 읽음 2: 잠김
+    }
+
+    //대화버튼 정보들을 갖는 리스트 객체
+    [System.Serializable]
+    public class TalkButtonDatas
+    {
+        public List<TalkButtonData> TalkButtonData;
+    }
+
     public TalkButtonDatas ButtonDatas;//대화버튼 데이터를
     private string dataName = null; //데이터베이스에 저장될 데이터명
 
@@ -64,19 +66,10 @@ public class DialogusSelectionController : MonoBehaviour
         }
         else if (BtnData.isStatus == 2)
         {
-            if (GameManager.instance.ChkItem(1, BtnData.KeyID))//key Item이 인벤토리에 있는 지 체크
-            {
-                GameManager.instance.ControllObjStatusData(1, dataName + BtnData.ButtonIndex, 1);//버튼 상태를 1(읽음)으로 설정
-                //획득할 증언이 존재할 경우 인벤토리에 추가
-                if (BtnData.GetTestimonyID > 0)
-                    GameManager.instance.AddItem(3, BtnData.GetTestimonyID);
-            }
-            else
-                return;//키가 없을 경우 함수 종료
-            Debug.Log(BtnData.isStatus);
+                return;//잠겨있을 시 함수 종료
         }
 
-        PlayerUIController.instance.OpenChatWindow(BtnData.LogID, this.gameObject);//대화창 오픈
+        PlayerUIController.instance.OpenChatWindow(BtnData.LogID, this.gameObject, BtnData.isStatus);//대화창 오픈
         this.gameObject.SetActive(false);//화면 비활성화
     }
 
@@ -90,8 +83,17 @@ public class DialogusSelectionController : MonoBehaviour
             int getStatus = GameManager.instance.ControllObjStatusData(0, dataName + ButtonData.ButtonIndex, 0);//데이터 명 뒤에 버튼의 인덱스번호 붙여서 데이터가져오기
             if (getStatus >= 0)
             {
+                //키 아이템을 가지고 있을 시 잠김(2) 상태의 대화버튼 안읽음(0) 상태로 설정
+                if (getStatus == 2 && GameManager.instance.ChkItem(1, ButtonData.KeyID)) //key Item이 인벤토리에 있는 지 체크
+                {
+                    GameManager.instance.ControllObjStatusData(1, dataName + ButtonData.ButtonIndex, 1);//버튼 상태를 1(읽음)으로 설정
+                    getStatus = 0;
+                }
+
                 ButtonData.isStatus = getStatus;
             }
+
+
 
             //버튼들 상태별 이미지 적용
             if (ButtonData.isStatus > 0)

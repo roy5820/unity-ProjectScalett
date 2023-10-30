@@ -121,19 +121,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7532886027985254255}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &5728027424786395748
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +136,7 @@ GameObject:
   - component: {fileID: 8143298800880068480}
   - component: {fileID: 8886947563516561429}
   m_Layer: 5
-  m_Name: DialogueSelectionWindow
+  m_Name: DialogueSelectionWindow_Ex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,8 +218,8 @@ MonoBehaviour:
     - ButtonIndex: 1
       Button: {fileID: 1713326415420607056}
       KeyID: 0
-      LogID: 1001
-      GetTestimonyID: 30101
+      LogID: 1002
+      GetTestimonyID: 0
       isStatus: 0
 --- !u!114 &8886947563516561429
 MonoBehaviour:
@@ -368,4 +356,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC9C0\uAE08 \uC0C1\uD669\uC5D0 \uB300\uD558\uC5EC"
+  m_Text: "201\uD638\uC5D0 \uC0DD\uAE34\uC77C"

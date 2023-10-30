@@ -9,19 +9,56 @@
           "lineNum": 1,
           "log": "으아! 뭔일이야",
           "speakerId": "301",
-          "spriteName": "JamesBrennan_nomal"
+          "spriteName": "JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0
         },
         {
           "lineNum": 2,
           "log": "203호에서 누가 죽었나봐요!",
           "speakerId": "302",
-          "spriteName": ""
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0
         },
         {
           "lineNum": 3,
           "log": "어서 가봐야겠어",
           "speakerId": "301",
-          "spriteName": "JamesBrennan_angry"
+          "spriteName": "JamesBrennan_angry",
+          "getItemID": 0,
+          "getItemType": 0
+        }
+      ]
+    },
+    {
+      "talkID": "1002",
+      "sceneName": "testScene2",
+      "talkName": "프롤로그 대화 feet 조수",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "으아! 뭔일이야",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan_nomal",
+          "getItemID": 101,
+          "getItemType": 0
+        },
+        {
+          "lineNum": 2,
+          "log": "203호에서 누가 죽었나봐요!",
+          "speakerId": "302",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0
+        },
+        {
+          "lineNum": 3,
+          "log": "어서 가봐야겠어",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan_angry",
+          "getItemID": 0,
+          "getItemType": 0
         }
       ]
     },
@@ -34,7 +71,9 @@
           "lineNum": 1,
           "log": "더 이상 찾을게 없어 보인다.",
           "speakerId": "301",
-          "spriteName": "JamesBrennan_nomal"
+          "spriteName": "JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0
         }
       ]
     },
@@ -47,7 +86,9 @@
           "lineNum": 1,
           "log": "잠겨 있어서, 열쇠가 필요할 것 같아",
           "speakerId": "301",
-          "spriteName": "JamesBrennan_nomal"
+          "spriteName": "JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0
         }
       ]
     },
@@ -60,7 +101,54 @@
           "lineNum": 1,
           "log": "문이 열렸군 이제 들어가 보자고",
           "speakerId": "301",
-          "spriteName": "JamesBrennan_nomal"
+          "spriteName": "JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0
+        }
+      ]
+    },
+    {
+      "talkID": "3001",
+      "sceneName": "HotelRoom_201",
+      "talkName": "컷씬 대화 로그",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "끔찍하군...",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0
+        }
+      ]
+    },
+    {
+      "talkID": "3002",
+      "sceneName": "HotelRoom_203",
+      "talkName": "게임 시작 시 대화",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "으악 피곤하다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0
+        }
+      ]
+    },
+    {
+      "talkID": "4001",
+      "sceneName": "HotelRoom_203",
+      "talkName": "계단 이동 시 막기",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "지금은 201호로 가봐야겠어.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0
         }
       ]
     }

@@ -11,6 +11,8 @@ public class Line
     public string log;
     public int speakerId;
     public string spriteName;
+    public int getItemID;
+    public int getItemType;
 }
 
 //

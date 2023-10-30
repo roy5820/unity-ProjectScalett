@@ -219,7 +219,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a13455307496c39458081d50fd63a72c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -618,13 +618,14 @@ GameObject:
   - component: {fileID: 1608139249593096663}
   - component: {fileID: 1608139249593096662}
   - component: {fileID: 1608139249593096661}
+  - component: {fileID: 1220370211455271726}
   m_Layer: 5
   m_Name: LeftMove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1608139249593096660
 RectTransform:
   m_ObjectHideFlags: 0
@@ -728,10 +729,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7025418033874171980}
-        m_TargetAssemblyTypeName: PlayerUIController, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 1220370211455271726}
+        m_TargetAssemblyTypeName: MoveArrowBtn_Controller, Assembly-CSharp
+        m_MethodName: OnMoveScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -740,6 +741,22 @@ MonoBehaviour:
           m_StringArgument: testRoom1
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1220370211455271726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608139249593096659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ea7d532cc75ef40aacee8b54523742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatus: 0
+  KeyItemID: 0
+  KeyItemType: 0
+  LockMessageID: 0
 --- !u!1 &1608139249776323456
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,6 +898,7 @@ GameObject:
   - component: {fileID: 1608139249986627895}
   - component: {fileID: 1608139249986627894}
   - component: {fileID: 1608139249986627893}
+  - component: {fileID: 3898771833777308544}
   m_Layer: 5
   m_Name: RihgtMove
   m_TagString: Untagged
@@ -991,10 +1009,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7025418033874171980}
-        m_TargetAssemblyTypeName: PlayerUIController, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 3898771833777308544}
+        m_TargetAssemblyTypeName: MoveArrowBtn_Controller, Assembly-CSharp
+        m_MethodName: OnMoveScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1003,6 +1021,22 @@ MonoBehaviour:
           m_StringArgument: testRoom2
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3898771833777308544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608139249986627891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ea7d532cc75ef40aacee8b54523742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatus: 0
+  KeyItemID: 0
+  KeyItemType: 0
+  LockMessageID: 0
 --- !u!1 &1608139250263284651
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,7 +1546,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 782e22df60b49e449809ecda7eff666f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f2b41c1a40746d84d9f11e07249a47db, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2325,7 +2359,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a13455307496c39458081d50fd63a72c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2458,7 +2492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a13455307496c39458081d50fd63a72c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2748,7 +2782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3069,7 +3103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a13455307496c39458081d50fd63a72c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3775,13 +3809,14 @@ GameObject:
   - component: {fileID: 7641084514316882657}
   - component: {fileID: 5556045153950534784}
   - component: {fileID: 7159526402436249156}
+  - component: {fileID: 7609945816643424392}
   m_Layer: 5
   m_Name: BackMove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6906136975841296341
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3885,10 +3920,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7025418033874171980}
-        m_TargetAssemblyTypeName: PlayerUIController, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 7609945816643424392}
+        m_TargetAssemblyTypeName: MoveArrowBtn_Controller, Assembly-CSharp
+        m_MethodName: OnMoveScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3897,6 +3932,22 @@ MonoBehaviour:
           m_StringArgument: SceneName
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7609945816643424392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6093422341473346701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79ea7d532cc75ef40aacee8b54523742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isStatus: 0
+  KeyItemID: 0
+  KeyItemType: 0
+  LockMessageID: 0
 --- !u!1 &6246631782931837138
 GameObject:
   m_ObjectHideFlags: 0
@@ -4774,7 +4825,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a13455307496c39458081d50fd63a72c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4900,7 +4951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

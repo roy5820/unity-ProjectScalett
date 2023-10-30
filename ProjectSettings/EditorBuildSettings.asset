@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/testRoom1.unity
-    guid: 2f633d713b8f9144a8a06a5cadf1c3d7
+    path: Assets/Scenes/HotelRoom_201/HotelRoom_201_1.unity
+    guid: f6af92348a1801344bfe0972ebee8b66
   - enabled: 1
-    path: Assets/Scenes/testRoom2.unity
-    guid: 1cce6a575ac72d84fa718653b5277ea4
+    path: Assets/Scenes/HotelRoom_201/HotelRoom_201_2.unity
+    guid: 23263c5c80d36c54ba9231cabfc7e801
   - enabled: 1
-    path: Assets/Scenes/testRoom3.unity
-    guid: fb18ffb2c2092f743af6d3a34c9c6101
+    path: Assets/Scenes/HotelRoom_203/HotelRoom_203.unity
+    guid: de43d656836fb604bac9909a2ebd71b5
   - enabled: 1
-    path: Assets/Scenes/testRoom4.unity
-    guid: d8cc45d5cbccc0545b87304b60223996
+    path: Assets/Scenes/SecondFloor_Corridor.unity
+    guid: 3daa6ab07ff68d243bc1b6d4b22a43de
+  - enabled: 1
+    path: Assets/Scenes/HotelRoom_201/HotelRoom_201_1_Drawer.unity
+    guid: 42441051b73bc9a498b747a7a6d85dcd
   m_configObjects: {}
