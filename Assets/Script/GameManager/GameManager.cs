@@ -92,157 +92,90 @@ public class GameManager : MonoBehaviour
     }
 
     //플레이어 아이템 데이터베이스에 아이템 추가하는 함수
-    public void AddItem(int ItemType, int ItemId)
+    public void AddItem(int ItemType, int ItemId, int ItemRelatedID = 0)
     {
-        DataIds dataid = new DataIds();//데이터 베이스에서 데이터를 받아 넣을 변수
-        bool DuplicateChk = false; //데이터 중복 체크
-        //아이템 타입별로 데이터 가져오기
+        List<DataIds> GetDataBase = null;//데이터 베이스에서 데이터를 받아 넣을 변수
+
+        //아이템 중복 체크, 이미 있을 경우 함수 종료
+        if (ChkItem(ItemType, ItemId)) return;
+
+        //아이템 타입별로 List 설정
         switch (ItemType)
         {
             case 0:
+                GetDataBase = HaveDataBase.UseItem;
+                break;
             case 1:
-                Item GetItem = ItemDataManager.instance.GetItemByID(ItemId, ItemType);//아이템 Id로 아이템 정보 가져오기
-                //PlayerDataBase에 맞게 데이터 변환
-                
-                dataid.ID = GetItem.id;
-                //타입별로 플레이어 인벤토리에 ID추가
-                if (ItemType == 0)
-                {
-                    //이미 보유중인지 중복 체크
-                    foreach (DataIds data in GameManager.instance.HaveDataBase.UseItem)
-                    {
-                        if (data.ID == ItemId)
-                        {
-                            DuplicateChk = true;
-                        }
-                    }
-                    //해당 데이터가 이미 인벤토리에 있는 지 중복 체크
-                    if (!DuplicateChk)
-                    {
-                        if (GetItem != null)
-                            GameManager.instance.HaveDataBase.UseItem.Add(dataid);//아이템 인벤토리에 ID 추가
-                    }
-                }
-                else if (ItemType == 1)
-                {
-                    //이미 보유중인지 중복 체크
-                    foreach (DataIds data in GameManager.instance.HaveDataBase.EvidenceItem)
-                    {
-                        if (data.ID == ItemId)
-                        {
-                            DuplicateChk = true;
-                        }
-                    }
-                    //해당 데이터가 이미 인벤토리에 있는 지 중복 체크
-                    if (!DuplicateChk)
-                    {
-                        if (GetItem != null)
-                            GameManager.instance.HaveDataBase.EvidenceItem.Add(dataid);//아이템 인벤토리에 ID 추가
-                    }
-                }
-
+                GetDataBase = HaveDataBase.EvidenceItem;
                 break;
             case 2:
-                //이미 보유중인지 중복 체크
-                foreach (DataIds data in GameManager.instance.HaveDataBase.CharacterInformation)
-                {
-                    if (data.ID == ItemId)
-                    {
-                        DuplicateChk = true;
-                    }
-                }
-                //해당 데이터가 이미 인벤토리에 있는 지 중복 체크
-                if (!DuplicateChk)
-                {
-                    Character GetCharacter = ItemDataManager.instance.GetCharcterByID(ItemId);
-
-                    dataid.ID = GetCharacter.id;
-                    if (GetCharacter != null)
-                        GameManager.instance.HaveDataBase.CharacterInformation.Add(dataid);//아이템 인벤토리에 ID 추가
-                }
-
+                GetDataBase = HaveDataBase.CharacterInformation;
                 break;
             case 3:
-                //이미 보유중인지 중복 체크
-                foreach (DataIds data in GameManager.instance.HaveDataBase.CharacterTestimony)
-                {
-                    if (data.ID == ItemId)
-                    {
-                        DuplicateChk = true;
-                    } 
-                }
-                //해당 데이터가 이미 인벤토리에 있는 지 중복 체크
-                if (!DuplicateChk)
-                {
-                    //아이템 데이터 베이스에 해당 아이템이 있는 지 체크
-                    Testimony GetTestimony = ItemDataManager.instance.GetTestimonyByID(ItemId);
-
-                    dataid.ID = GetTestimony.id;
-                    dataid.RelatedID = GetTestimony.id / 100;
-                    if (GetTestimony != null)
-                        GameManager.instance.HaveDataBase.CharacterTestimony.Add(dataid);//아이템 인벤토리에 ID 추가
-                }
-                
+                GetDataBase = HaveDataBase.CharacterTestimony;
                 break;
         }
+
+        //데이터 삽입 하는 부분
+        //데이터 삽입전 데이터 베이스에 맞는 데이터로 가공
+        DataIds ComparativeData = new DataIds();
+        ComparativeData.ID = ItemId;//아이템 아이디 설정
+        ComparativeData.RelatedID = ItemRelatedID;//아이템 관련 아이디 설정
+
+        int DataBaseCnt = GetDataBase.Count;//현제 리스트의 크기
+        //리스트의 크기가 0보다 클시 삽입정렬을 통한 데이터 삽입 진행 아닐 시 그냥 추가
+        if (DataBaseCnt > 0)
+        {
+            for (int i = 0; i < DataBaseCnt; i++)
+            {
+
+                //비교할 데이터가 현제 아이디 보다 작을 시 현제 위치에 데이터 삽입
+                if (ComparativeData.ID < GetDataBase[i].ID)
+                {
+                    //비교중인 데이터를 현제 위치에 삽입
+                    GetDataBase.Insert(i, ComparativeData);
+                    return;
+                }
+
+                //현제 위치가 데이터의 끝일경우 NowData의 값을 리스트 끝에 추가
+                if (i == DataBaseCnt - 1)
+                    GetDataBase.Add(ComparativeData);
+            }
+        }
+        else
+            GetDataBase.Add(ComparativeData);//아이템 추가
+
     }
     //데이터베이스에서 아이템을 제거하는 함수
     public void DelItem(int ItemType, int ItemId)
     {
         //플레이어 데이터베이스 가져오기
-        PlayerDataBase haveItemData = GameManager.instance.HaveDataBase;
+        List<DataIds> GetDataBase = null;//데이터 베이스에서 데이터를 받아 넣을 변수
 
-        //아이템 종류별 이벤트 처리
-        if (ItemType == 0)
+        //아이템 타입별로 List 설정
+        switch (ItemType)
         {
-            //ItemId가 일치하는 아이템을 인벤토리에서 제거하는 문장입니다.
-            List<DataIds> UseItemList = GameManager.instance.HaveDataBase.UseItem; //배열 삭제를 위한 아이템 데이터베이스 리스트화
-            foreach (DataIds dataid in haveItemData.UseItem)
-            {
-                if (dataid.ID == ItemId)
-                {
-                    UseItemList.Remove(dataid);
-                    break;
-                }
-            }
+            case 0:
+                GetDataBase = HaveDataBase.UseItem;
+                break;
+            case 1:
+                GetDataBase = HaveDataBase.EvidenceItem;
+                break;
+            case 2:
+                GetDataBase = HaveDataBase.CharacterInformation;
+                break;
+            case 3:
+                GetDataBase = HaveDataBase.CharacterTestimony;
+                break;
         }
-        else if (ItemType == 1)
+
+        //ID로 유저 인벤토리에서 데이터 삭제
+        foreach (DataIds dataid in GetDataBase)
         {
-            //ItemId가 일치하는 아이템을 인벤토리에서 제거하는 문장입니다.
-            List<DataIds> UseItemList = GameManager.instance.HaveDataBase.EvidenceItem; //배열 삭제를 위한 아이템 데이터베이스 리스트화
-            foreach (DataIds dataid in haveItemData.EvidenceItem)
+            if (dataid.ID == ItemId)
             {
-                if (dataid.ID == ItemId)
-                {
-                    UseItemList.Remove(dataid);
-                    break;
-                }
-            }
-        }
-        else if (ItemType == 2)
-        {
-            //ItemId가 일치하는 아이템을 인벤토리에서 제거하는 문장입니다.
-            List<DataIds> UseItemList = GameManager.instance.HaveDataBase.CharacterInformation; //배열 삭제를 위한 아이템 데이터베이스 리스트화
-            foreach (DataIds dataid in haveItemData.CharacterInformation)
-            {
-                if (dataid.ID == ItemId)
-                {
-                    UseItemList.Remove(dataid);
-                    break;
-                }
-            }
-        }
-        else if (ItemType == 3)
-        {
-            //ItemId가 일치하는 아이템을 인벤토리에서 제거하는 문장입니다.
-            List<DataIds> UseItemList = GameManager.instance.HaveDataBase.CharacterTestimony; //배열 삭제를 위한 아이템 데이터베이스 리스트화
-            foreach (DataIds dataid in haveItemData.CharacterTestimony)
-            {
-                if (dataid.ID == ItemId)
-                {
-                    UseItemList.Remove(dataid);
-                    break;
-                }
+                GetDataBase.Remove(dataid);
+                break;
             }
         }
     }
