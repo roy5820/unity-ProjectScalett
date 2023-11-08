@@ -16,6 +16,7 @@ public class GetItem : MonoBehaviour
     public bool isLock = false; //잠김 여부
     public int KeyItemId = 101; //상호작용 되는 아이템의 ID
 
+    public int GetMessageID;//아이템 획득 시 메세지 ID
     public int DuplicateMessageID;//중복 메시지 ID
     public int LockMessageID;//잠김 메세지 ID
 
@@ -84,11 +85,13 @@ public class GetItem : MonoBehaviour
             
             isStatus = 2; //아이템 획득여부 2로 설정
 
-            //아이템 종류별 이벤트 처리
+            /*//아이템 종류별 이벤트 처리
             GameManager.instance.AddItem(GetItemType, GetItemId);
 
             //아이템 획득 시 아이템 인스펙터창 띄우기
-            PlayerUIController.instance.OpenItemInspectorWindow(GetItemType, GetItemId);
+            PlayerUIController.instance.OpenItemInspectorWindow(GetItemType, GetItemId);*/
+            //아이템 획득 대화창 띄우기
+            PlayerUIController.instance.OpenChatWindow(GetMessageID, null);
         }
         else if (isStatus == 2)
         {

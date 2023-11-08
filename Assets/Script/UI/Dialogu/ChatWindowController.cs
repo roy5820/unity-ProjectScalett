@@ -28,28 +28,6 @@ public class ChatWindowController : MonoBehaviour
         UpdateChatLog(ThisLineNum);//대화로그 화면에 뿌리기
     }
 
-    private void Update()
-    {
-        //프린팅 상태가 아니면서 아이템 획득 상태가 아니면서, CallObj상태가 처음 읽음일 경우에만 아이템 획득 이벤트 상태
-        if (!isPrinting && !isGetItem && CallObj_Status == 0)
-        {
-            isGetItem = true;//아이템 획득여부 true로 설정
-            //현재 라인에 getItemID 가져오기
-            Line getLine = TalkLines[ThisLineNum];
-
-            //getItemID가 있으면 아이템 획득 이벤트 구현
-            if(getLine.getItemID > 0)
-            {
-                //아이템 종류별 이벤트 처리
-                GameManager.instance.AddItem(getLine.getItemType, getLine.getItemID);
-
-                //아이템 획득 시 아이템 인스펙터창 띄우기
-                if (getLine.getItemType < 2) 
-                    PlayerUIController.instance.OpenItemInspectorWindow(getLine.getItemType, getLine.getItemID);
-            }
-        }
-    }
-
     public void UpdateChatLog(int NowLineNum)
     {
         //null체크
@@ -143,6 +121,27 @@ public class ChatWindowController : MonoBehaviour
         {
             isPrinting = false;
             return;
+        }
+        //프린팅 상태가 아니면서 아이템 획득 상태가 아니면서, CallObj상태가 처음 읽음일 경우에만 아이템 획득 이벤트 상태
+        else if (!isPrinting && !isGetItem && CallObj_Status == 0)
+        {
+            isGetItem = true;//아이템 획득여부 true로 설정
+            //현재 라인에 getItemID 가져오기
+            Line getLine = TalkLines[ThisLineNum];
+
+            //getItemID가 있으면 아이템 획득 이벤트 구현
+            if (getLine.getItemID > 0)
+            {
+                //아이템 종류별 이벤트 처리
+                GameManager.instance.AddItem(getLine.getItemType, getLine.getItemID);
+
+                //아이템 획득 시 아이템 인스펙터창 띄우기
+                if (getLine.getItemType < 2)
+                {
+                    PlayerUIController.instance.OpenItemInspectorWindow(getLine.getItemType, getLine.getItemID);
+                    return;
+                }
+            }
         }
 
         //다음 페이지 존제 시 라인번호 1증가 시키고 로그 전환

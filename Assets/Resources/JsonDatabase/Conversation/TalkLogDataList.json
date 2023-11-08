@@ -456,6 +456,94 @@
           "getItemType": 0
         }
       ]
+    },
+
+    {
+      "talkID": "6001",
+      "sceneName": "HotelRoom_203",
+      "talkName": "서랍에서 열쇠 획득 시 메세지",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "(드르륵)",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0
+        },
+        {
+          "lineNum": 2,
+          "log": "뭐지 이 열쇠는? 우리방 열쇠는 아닌 것 같은데...",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 101,
+          "getItemType": 0
+        }
+      ]
+    },
+
+    {
+      "talkID": "6002",
+      "sceneName": "HotelRoom_201",
+      "talkName": "",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "러그가 피 범벅이 되어있군",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 203,
+          "getItemType": 1
+        }
+      ]
+    },
+
+    {
+      "talkID": "6003",
+      "sceneName": "HotelRoom_201",
+      "talkName": "",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "러그위에 이 하얀가루 설마 독인건가?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 202,
+          "getItemType": 1
+        }
+      ]
+    },
+
+    {
+      "talkID": "6004",
+      "sceneName": "HotelRoom_201",
+      "talkName": "",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "이 깨진 유컵을 통해 독을 마신건가?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 201,
+          "getItemType": 1
+        }
+      ]
+    },
+
+    {
+      "talkID": "6005",
+      "sceneName": "HotelRoom_201",
+      "talkName": "",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "이건 시계에 분침? 이게 왜 여기에 있지?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 102,
+          "getItemType": 0
+        }
+      ]
     }
   ]
 }
