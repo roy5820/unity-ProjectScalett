@@ -132,8 +132,13 @@ public class ChatWindowController : MonoBehaviour
             //getItemID가 있으면 아이템 획득 이벤트 구현
             if (getLine.getItemID > 0)
             {
+                int charactorID = 0;
+
+                //획득 아이템이 증언이면 연동 아이디에 캐릭터 id 추가
+                if (getLine.getItemType == 3)
+                    charactorID = getLine.speakerId;
                 //아이템 종류별 이벤트 처리
-                GameManager.instance.AddItem(getLine.getItemType, getLine.getItemID);
+                GameManager.instance.AddItem(getLine.getItemType, getLine.getItemID, charactorID);
 
                 //아이템 획득 시 아이템 인스펙터창 띄우기
                 if (getLine.getItemType < 2)

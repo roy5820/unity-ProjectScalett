@@ -99,8 +99,6 @@ public class DialogusSelectionController : MonoBehaviour
 
             //버튼들 상태별 이미지 적용
             if (ButtonData.isStatus > 0) {
-            
-                Debug.Log(ButtonData.isStatus);
                 Sprite ButtonImg = null;
                 if (ButtonData.isStatus == 1)
                     ButtonImg = Resources.Load<Sprite>(ImgPath + "ChatSelectButton_read");//버튼 이미지 가져오기

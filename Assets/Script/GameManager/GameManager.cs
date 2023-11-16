@@ -128,7 +128,6 @@ public class GameManager : MonoBehaviour
         {
             for (int i = 0; i < DataBaseCnt; i++)
             {
-
                 //비교할 데이터가 현제 아이디 보다 작을 시 현제 위치에 데이터 삽입
                 if (ComparativeData.ID < GetDataBase[i].ID)
                 {
@@ -143,7 +142,10 @@ public class GameManager : MonoBehaviour
             }
         }
         else
+        {
             GetDataBase.Add(ComparativeData);//아이템 추가
+        }
+            
 
     }
     //데이터베이스에서 아이템을 제거하는 함수
