@@ -17,6 +17,18 @@
       "name": "201호 문 열쇠",
       "spriteName": "UseItem/Key",
       "additionalExplanation": "201호의 열쇠이다."
+    },
+    {
+      "id": "104",
+      "name": "시계 시침",
+      "spriteName": "UseItem/ClockHandle_Min",
+      "additionalExplanation": "시계에 끼우는 시침이다"
+    },
+    {
+      "id": "105",
+      "name": "신문 반쪽",
+      "spriteName": "UseItem/ohterNewspaper",
+      "additionalExplanation": "신문 반쪽"
     }
 
   ],

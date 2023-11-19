@@ -544,6 +544,38 @@
           "getItemType": 0
         }
       ]
+    },
+
+    {
+      "talkID": "6006",
+      "sceneName": "HotelRoom_201",
+      "talkName": "",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "이건 시계에 시침? 이게 왜 여기에 있지?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 104,
+          "getItemType": 0
+        }
+      ]
+    },
+
+    {
+      "talkID": "6007",
+      "sceneName": "HotelRoom_201",
+      "talkName": "",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "사람, 전등, 개... 이건 도대체 뭘 나타내는 거지?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0
+        }
+      ]
     }
   ]
 }
