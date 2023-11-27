@@ -78,7 +78,6 @@ public class electricBoxMainController : MonoBehaviour
         if(lightBulbs[bulbIndex] != null)
         {
             lightBulbs[bulbIndex].bulbStatus *= -1;
-            ChageForSatus();
         }
     }
 
