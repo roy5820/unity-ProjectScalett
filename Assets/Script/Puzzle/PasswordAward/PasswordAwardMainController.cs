@@ -92,7 +92,7 @@ public class PasswordAwardMainController : MonoBehaviour
         {
             //숫자가 9일 경우 0으로 초기화
             if (numBoards[numIndex].isNum == 0)
-                numBoards[numIndex].isNum = 0;
+                numBoards[numIndex].isNum = 9;
             else
                 numBoards[numIndex].isNum--;
         }
