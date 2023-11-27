@@ -19,7 +19,7 @@ public class ClockHandController : MonoBehaviour, IDragHandler, IEndDragHandler
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log(transform.GetComponent<RectTransform>().rotation.z * 180 / 6);
-        transform.rotation = Quaternion.Euler(0, 0, (int)(transform.GetComponent<RectTransform>().rotation.z*180/6) * 30);
+        Debug.Log(transform.GetComponent<RectTransform>().rotation.z);
+        transform.rotation = Quaternion.Euler(0, 0, Mathf.Round(transform.GetComponent<RectTransform>().rotation.z*180/30) * 30);
     }
 }
