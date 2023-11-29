@@ -483,7 +483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlaceObj: {fileID: 30699684}
-  PlaceItemID: 101
+  PlaceItemID: 105
   dataName: puzzle_passwordPuzzle
 --- !u!1 &799484739
 GameObject:
