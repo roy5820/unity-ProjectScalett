@@ -42,6 +42,8 @@ public class GameManager : MonoBehaviour
 
     public int SelectItemId = 0; //현제 선택한 사용 아이템
 
+    private TextAsset HaveItemDataJsonFile; // 이제 이 변수에 JSON 파일을 할당해야 합니다.
+
     private void Awake()
     {
         //게임 메니저 인스턴스 초기화
@@ -51,6 +53,21 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
+
+        // JSON 파일을 읽어와서 데이터베이스 초기화
+        //보유 아이템 데이터베이스 초기화
+        if (HaveItemDataJsonFile != null)
+        {
+            HaveDataBase = JsonUtility.FromJson<PlayerDataBase>(HaveItemDataJsonFile.ToString());
+        }
+        else
+        {
+            Debug.LogError("아이템 데이터베이스를 로드할 수 없습니다.");
+        }
+
+        //
+
+
     }
 
     //플레이어 아이템 데이터베이스에 특정 아이템이 있는지 확인하는 함수

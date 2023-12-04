@@ -45,7 +45,7 @@ public class ItemDataManager : MonoBehaviour
 {
     public static ItemDataManager instance;
     public ItemDatabase itemDatabase;
-    public TextAsset jsonFile; // 이제 이 변수에 JSON 파일을 할당해야 합니다.
+    private TextAsset jsonFile; // 이제 이 변수에 JSON 파일을 할당해야 합니다.
 
     private void Awake()
     {

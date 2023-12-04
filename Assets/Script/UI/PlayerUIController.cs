@@ -21,6 +21,10 @@ public class PlayerUIController : MonoBehaviour
     public GameObject ChatLogPre;//대화창 프리펩
 
     public GameObject ItemInspectorPre;//아이템 추가설명창 프리펩
+
+    public GameObject InGameMenu;//인게임 메뉴창
+
+
     private void Awake()
     {
         //플레이어 UI컨트롤러 인스턴스 초기화
@@ -151,5 +155,28 @@ public class PlayerUIController : MonoBehaviour
         GameObject CutScenePre = Resources.Load<GameObject>(CutScenePath + CutSceneName);//컷씬 프리펩 가져오기
 
         GameObject Prefap = Instantiate(CutScenePre, this.transform);//컷씬 프리펩 생성
+    }
+
+    //인게임 메뉴 버튼 컨트롤 함수 BtnType: 0 계속하기, 1 저장하기, 2 메뉴로 나가기 3 메뉴창 열기
+    public void InGameMenuBtnCtorller(int BtnType)
+    {
+        //버튼 종류에 따른 이벤트 발생
+        switch (BtnType)
+        {
+            case 0:
+                InGameMenu.SetActive(false);//인게임 메뉴창 비활성화
+                break;
+            case 1:
+
+                break;
+            case 2:
+                ChangeScene("MainTitle");//타이틀화면으로 나가기
+                break;
+            case 3:
+                InGameMenu.SetActive(true);//인게임 메뉴창 활성화
+                break;
+        }
+
+        return;
     }
 }
