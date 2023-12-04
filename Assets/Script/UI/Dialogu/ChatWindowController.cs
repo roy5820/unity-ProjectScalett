@@ -56,7 +56,6 @@ public class ChatWindowController : MonoBehaviour
                 TalkerImgBox.SetActive(false);
             }
 
-
             //말하는 사람 이름 데이터가 있으면 적용
             if (TalkLines[NowLineNum].speakerId > 0)
             {

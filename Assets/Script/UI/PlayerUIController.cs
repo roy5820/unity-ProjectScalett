@@ -123,7 +123,7 @@ public class PlayerUIController : MonoBehaviour
     public void OpenChatWindow(int LogID, GameObject CallObj = null, int CallObj_Status = 0)
     {
         GameObject Chatlog = Instantiate(ChatLogPre, this.transform);//대화로그 창 생성 및 해당 캔버스로 부모 설정
-
+        
         Chatlog.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 0); // 위치값 초기화
         if (CallObj != null)
             Chatlog.GetComponent<ChatWindowController>().CallObj = CallObj; //호출 오브젝트 값 설정

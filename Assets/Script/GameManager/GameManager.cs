@@ -1,7 +1,10 @@
+using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
+
 //데이터 ID변수
 [System.Serializable]
 public class DataIds
@@ -42,6 +45,7 @@ public class GameManager : MonoBehaviour
 
     public int SelectItemId = 0; //현제 선택한 사용 아이템
 
+    public string HaveItemDataJsonPath = "JsonDatabase/InGameData";
     private TextAsset HaveItemDataJsonFile; // 이제 이 변수에 JSON 파일을 할당해야 합니다.
 
     private void Awake()
@@ -55,17 +59,24 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         // JSON 파일을 읽어와서 데이터베이스 초기화
-        //보유 아이템 데이터베이스 초기화
-        if (HaveItemDataJsonFile != null)
+        //보유 아이템 데이터베이스 초기화 부분
+        if (HaveItemDataJsonPath != null)
         {
-            HaveDataBase = JsonUtility.FromJson<PlayerDataBase>(HaveItemDataJsonFile.ToString());
-        }
-        else
-        {
-            Debug.LogError("아이템 데이터베이스를 로드할 수 없습니다.");
+            Debug.Log(HaveItemDataJsonPath);
+            //json파일 가져오기
+            HaveItemDataJsonFile = Resources.Load<TextAsset>(HaveItemDataJsonPath + "/HaveItemDataBase.json");
+            
+            //json 파일 유무에 따라 있으면 데이터 가져오고 없으면 파일 생성 하기
+            if (HaveItemDataJsonFile != null)
+            {
+                HaveDataBase = JsonUtility.FromJson<PlayerDataBase>(HaveItemDataJsonFile.ToString());
+            }
         }
 
-        //
+        
+
+        //오브젝트 상태값 저장되는 데이터베이스 초기화 부분
+
 
 
     }
@@ -236,5 +247,13 @@ public class GameManager : MonoBehaviour
         }
 
         return -1; //데이터를 읽지 못했을 경우 -1로 리턴
+    }
+
+    private void OnDestroy()
+    {
+        //
+        string json = JsonConvert.SerializeObject(HaveDataBase); //데이터 베이스 내용을 json문자열로 변환
+        Debug.Log(HaveItemDataJsonPath);
+        System.IO.File.WriteAllText("Assets/Resources/" + HaveItemDataJsonPath + "/HaveItemDataBase.json", json);//Json 문자열을 파일에 쓰기
     }
 }
