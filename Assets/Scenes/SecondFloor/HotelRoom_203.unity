@@ -563,42 +563,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8347369413724512160, guid: b0e24904990c48043ac29a5ffdad9ca4, type: 3}
-      propertyPath: HaveItemDataJsonPath
-      value: JsonDatabase/InGameData
-      objectReference: {fileID: 0}
-    - target: {fileID: 8347369413724512160, guid: b0e24904990c48043ac29a5ffdad9ca4, type: 3}
-      propertyPath: ObjStatusDataBase.ObjStatus.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8347369413724512160, guid: b0e24904990c48043ac29a5ffdad9ca4, type: 3}
-      propertyPath: HaveDataBase.CharacterTestimony.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8347369413724512160, guid: b0e24904990c48043ac29a5ffdad9ca4, type: 3}
-      propertyPath: HaveDataBase.CharacterTestimony.Array.data[0].ID
-      value: 30101
-      objectReference: {fileID: 0}
-    - target: {fileID: 8347369413724512160, guid: b0e24904990c48043ac29a5ffdad9ca4, type: 3}
-      propertyPath: HaveDataBase.CharacterTestimony.Array.data[1].ID
-      value: 30102
-      objectReference: {fileID: 0}
-    - target: {fileID: 8347369413724512160, guid: b0e24904990c48043ac29a5ffdad9ca4, type: 3}
-      propertyPath: HaveDataBase.CharacterTestimony.Array.data[2].ID
-      value: 30201
-      objectReference: {fileID: 0}
-    - target: {fileID: 8347369413724512160, guid: b0e24904990c48043ac29a5ffdad9ca4, type: 3}
-      propertyPath: HaveDataBase.CharacterTestimony.Array.data[0].RelatedID
-      value: 301
-      objectReference: {fileID: 0}
-    - target: {fileID: 8347369413724512160, guid: b0e24904990c48043ac29a5ffdad9ca4, type: 3}
-      propertyPath: HaveDataBase.CharacterTestimony.Array.data[1].RelatedID
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8347369413724512160, guid: b0e24904990c48043ac29a5ffdad9ca4, type: 3}
-      propertyPath: HaveDataBase.CharacterTestimony.Array.data[2].RelatedID
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8347369413724512161, guid: b0e24904990c48043ac29a5ffdad9ca4, type: 3}
       propertyPath: m_RootOrder
       value: 6

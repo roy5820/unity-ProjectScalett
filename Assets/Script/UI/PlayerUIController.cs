@@ -157,26 +157,22 @@ public class PlayerUIController : MonoBehaviour
         GameObject Prefap = Instantiate(CutScenePre, this.transform);//컷씬 프리펩 생성
     }
 
-    //인게임 메뉴 버튼 컨트롤 함수 BtnType: 0 계속하기, 1 저장하기, 2 메뉴로 나가기 3 메뉴창 열기
-    public void InGameMenuBtnCtorller(int BtnType)
+    //인게임 메뉴창 띄우기 버튼 이벤트 처리
+    public void OnOpenInGameMenu()
     {
-        //버튼 종류에 따른 이벤트 발생
-        switch (BtnType)
-        {
-            case 0:
-                InGameMenu.SetActive(false);//인게임 메뉴창 비활성화
-                break;
-            case 1:
+        InGameMenu.SetActive(true);//인게임 메뉴창 활성화
+    }
 
-                break;
-            case 2:
-                ChangeScene("MainTitle");//타이틀화면으로 나가기
-                break;
-            case 3:
-                InGameMenu.SetActive(true);//인게임 메뉴창 활성화
-                break;
-        }
+    //인게임 메뉴 계속하기 버튼 이벤트 처리
+    public void OnContinueBtn()
+    {
+        InGameMenu.SetActive(false);//인게임 메뉴창 비활성화
+    }
 
-        return;
+    //타이틀 화면으로 나가기
+    public void OnGoToTitle()
+    {
+        Destroy(GameManager.instance.gameObject);//인게임 메니저 삭제
+        ChangeScene("MainTitle");//타이틀화면으로 나가기
     }
 }

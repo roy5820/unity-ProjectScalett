@@ -54,14 +54,11 @@ MonoBehaviour:
       RelatedID: 0
     - ID: 302
       RelatedID: 0
-    CharacterTestimony:
-    - ID: 30101
-      RelatedID: 301
-    - ID: 30102
-      RelatedID: 301
-    - ID: 30201
-      RelatedID: 302
+    CharacterTestimony: []
+  ObjStatusDataBase:
+    ObjStatus: []
   SelectItemId: 0
+  InGameDataJsonPath: Assets/Resources/JsonDatabase/InGameData
 --- !u!114 &315926264751153863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,9 +89,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b2a7e1b6ea706847b5ec230c6957995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TalkLogDatabase:
-    talkID: 
-    sceneName: []
-    talkName: []
-    lines: []
+  TalkDataList:
+    talkDataList: []
   jsonFile: {fileID: 4900000, guid: a654c3ee92021c1469a4fd98d9ff240f, type: 3}

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 //데이터 ID변수
 [System.Serializable]
@@ -45,8 +46,12 @@ public class GameManager : MonoBehaviour
 
     public int SelectItemId = 0; //현제 선택한 사용 아이템
 
-    public string HaveItemDataJsonPath = "JsonDatabase/InGameData";
-    private TextAsset HaveItemDataJsonFile; // 이제 이 변수에 JSON 파일을 할당해야 합니다.
+    private string InGameDataJsonPath;//인게임 데이터가 저장되는 장소
+    private string HaveItemDataJsonFile; // 보유아이템 데이터가 저장되는 JSON파일
+    private string ObjStatusDataJsonFile; // 오브젝트 상태값이 데이터가 저장되는 JSON파일
+
+    private string HaveItemDataPath;//보유 아이템 JSON파일 경로
+    private string ObjStatusDataPath;//보유 아이템 JSON파일 경로
 
     private void Awake()
     {
@@ -55,30 +60,15 @@ public class GameManager : MonoBehaviour
             instance = this;
         else if (instance != this)
             Destroy(gameObject);
+            
 
         DontDestroyOnLoad(gameObject);
 
-        // JSON 파일을 읽어와서 데이터베이스 초기화
-        //보유 아이템 데이터베이스 초기화 부분
-        if (HaveItemDataJsonPath != null)
-        {
-            Debug.Log(HaveItemDataJsonPath);
-            //json파일 가져오기
-            HaveItemDataJsonFile = Resources.Load<TextAsset>(HaveItemDataJsonPath + "/HaveItemDataBase.json");
-            
-            //json 파일 유무에 따라 있으면 데이터 가져오고 없으면 파일 생성 하기
-            if (HaveItemDataJsonFile != null)
-            {
-                HaveDataBase = JsonUtility.FromJson<PlayerDataBase>(HaveItemDataJsonFile.ToString());
-            }
-        }
+        HaveItemDataPath = Path.Combine(Application.streamingAssetsPath, "InGameData/HaveItemDataBase.json");//보유 아이템 JSON파일 경로 초기화
+        ObjStatusDataPath = Path.Combine(Application.streamingAssetsPath, "InGameData/ObjStatusDataBase.json");//오브젝트 상태값 JSON파일 경로 초기화
 
-        
-
-        //오브젝트 상태값 저장되는 데이터베이스 초기화 부분
-
-
-
+    //JSON파일 읽어 오기
+    OnLoadJsonFile();
     }
 
     //플레이어 아이템 데이터베이스에 특정 아이템이 있는지 확인하는 함수
@@ -173,8 +163,8 @@ public class GameManager : MonoBehaviour
         {
             GetDataBase.Add(ComparativeData);//아이템 추가
         }
-            
 
+        OnSave();
     }
     //데이터베이스에서 아이템을 제거하는 함수
     public void DelItem(int ItemType, int ItemId)
@@ -242,6 +232,8 @@ public class GameManager : MonoBehaviour
 
                 ObjStatusDataBase.ObjStatus.Add(AddStatus);//리스트에 데이터 추가
 
+                OnSave();
+
                 return AddStatus.Status;
             }
         }
@@ -249,11 +241,44 @@ public class GameManager : MonoBehaviour
         return -1; //데이터를 읽지 못했을 경우 -1로 리턴
     }
 
+    //인게임 데이터가 저장된 JSON을 읽어오는 함수
+    private void OnLoadJsonFile()
+    {
+        // JSON 파일을 읽어와서 데이터베이스 초기화
+        //보유 아이템 데이터베이스 초기화 부분
+        //경로에 파일 유무에 따른 실행여부 결정
+        if (File.Exists(HaveItemDataPath))
+        {
+            HaveItemDataJsonFile = File.ReadAllText(HaveItemDataPath);//json파일 가져오기
+            HaveDataBase = JsonUtility.FromJson<PlayerDataBase>(HaveItemDataJsonFile);//가져온 json파일 데이터베이스에 삽입
+        }
+
+
+        //오브젝트 상태값 저장되는 데이터베이스 초기화 부분
+        //경로에 파일 유무에 따른 실행여부 결정
+        if (File.Exists(ObjStatusDataPath))
+        {
+            ObjStatusDataJsonFile = File.ReadAllText(ObjStatusDataPath);//json파일 가져오기
+            ObjStatusDataBase = JsonUtility.FromJson<StatusDataBase>(ObjStatusDataJsonFile);//가져온 json파일 데이터베이스에 삽입
+        }
+    }
+
+    //저장기능 구현 함수
+    private void OnSave()
+    {
+        //게임 종료 또는 메뉴로 나갈 시 게임 데이터 json 파일로 저장
+        //보유 아이템 인벤토리를 json파일로 저장하는 부분
+        string haveItemDataBaseJson = JsonConvert.SerializeObject(HaveDataBase); //데이터 베이스 내용을 json문자열로 변환
+        File.WriteAllText(HaveItemDataPath, haveItemDataBaseJson);//Json 문자열을 파일에 쓰기
+        
+        //오브젝트 상태값이 json파일로 저장하는 부분
+        string objStatusDatatBasejson = JsonConvert.SerializeObject(ObjStatusDataBase); //데이터 베이스 내용을 json문자열로 변환
+        File.WriteAllText(ObjStatusDataPath, objStatusDatatBasejson);//Json 문자열을 파일에 쓰기
+    }
+
     private void OnDestroy()
     {
-        //
-        string json = JsonConvert.SerializeObject(HaveDataBase); //데이터 베이스 내용을 json문자열로 변환
-        Debug.Log(HaveItemDataJsonPath);
-        System.IO.File.WriteAllText("Assets/Resources/" + HaveItemDataJsonPath + "/HaveItemDataBase.json", json);//Json 문자열을 파일에 쓰기
+        //마지막 있던 씬 이름을 PlayerPrefs에 저장
+        PlayerPrefs.SetString("LastSceneName", SceneManager.GetActiveScene().name);
     }
 }
