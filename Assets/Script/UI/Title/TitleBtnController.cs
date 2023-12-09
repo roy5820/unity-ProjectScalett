@@ -9,6 +9,7 @@ public class TitleBtnController : MonoBehaviour
     private string HaveItemDataJsonPath;//보유 아이템 데이터가 저장되는 장소
     private string ObjStatusDataJsonPath;//오브젝트 상태값 데이터가 저장되는 장소
 
+    public GameObject OptionMenu;
     private void Awake()
     {
         //주소값 초기화
@@ -34,5 +35,15 @@ public class TitleBtnController : MonoBehaviour
         {
             SceneManager.LoadScene(lastSceneName);
         }
+    }
+
+    public void OnOpenOption()
+    {
+        OptionMenu.SetActive(true);
+    }
+
+    public void OnCloseOption()
+    {
+        OptionMenu.SetActive(false);
     }
 }
