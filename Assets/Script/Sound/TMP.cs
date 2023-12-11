@@ -15,12 +15,11 @@ public class TMP : MonoBehaviour
         float bgmValue;
         myMixer.GetFloat("BGM", out bgmValue);
         bgmAudioSlider.value = bgmValue;
+        Debug.Log(bgmValue);
 
         float sfxValue;
         myMixer.GetFloat("SFX", out sfxValue);
         sfxAudioSlider.value = sfxValue;
-
-        Debug.Log(bgmValue + ", " + sfxValue);
     }
 
     private void OnEnable()
@@ -32,24 +31,29 @@ public class TMP : MonoBehaviour
         float sfxValue;
         myMixer.GetFloat("SFX", out sfxValue);
         sfxAudioSlider.value = sfxValue;
-
-        Debug.Log(bgmValue + ", " + sfxValue);
     }
 
     public void BgmAudioControl()
     {
         float sound = bgmAudioSlider.value;
 
-        if (sound == -40f) myMixer.SetFloat("BGM", -80);
-        else myMixer.SetFloat("BGM", sound);
+        if (sound == -40f)
+            sound = -80f;
+
+        PlayerPrefs.SetFloat("BGM", sound);
+        Debug.Log(sound + ", " + PlayerPrefs.GetFloat("BGM"));
+        myMixer.SetFloat("BGM", sound);
     }
 
     public void SfxAudioControl()
     {
         float sound = bgmAudioSlider.value;
 
-        if (sound == -40f) myMixer.SetFloat("SFX", -80);
-        else myMixer.SetFloat("SFX", sound);
+        if (sound == -40f)
+            sound = -80f;
+
+        PlayerPrefs.SetFloat("SFX", sound);
+        myMixer.SetFloat("SFX", sound);
     }
 
     public void ToggleAudioVolume()

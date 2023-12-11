@@ -11,7 +11,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 2,
@@ -19,7 +20,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName":  ""
         },
         {
           "lineNum": 3,
@@ -27,7 +29,8 @@
           "speakerId": "",
           "spriteName": "",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": "WoodDoorKnockKnock"
         },
         {
           "lineNum": 4,
@@ -35,7 +38,8 @@
           "speakerId": "302",
           "spriteName": "Kamilla/Kamilla_surprised",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 5,
@@ -43,7 +47,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 6,
@@ -51,7 +56,8 @@
           "speakerId": "302",
           "spriteName": "Kamilla/Kamilla_surprised",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 7,
@@ -59,7 +65,8 @@
           "speakerId": "302",
           "spriteName": "Kamilla/Kamilla_surprised",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     },
@@ -75,7 +82,8 @@
           "speakerId": "302",
           "spriteName": "Kamilla/Kamilla_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     },
@@ -91,7 +99,8 @@
           "speakerId": "",
           "spriteName": "",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 2,
@@ -99,7 +108,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_embarrassment",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 3,
@@ -107,7 +117,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 4,
@@ -115,7 +126,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 5,
@@ -123,7 +135,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 6,
@@ -131,7 +144,8 @@
           "speakerId": "306",
           "spriteName": "ManSilhouette/ManSilhouette_nomal",
           "getItemID": 306,
-          "getItemType": 2
+          "getItemType": 2,
+          "soundName": ""
         },
         {
           "lineNum": 7,
@@ -139,7 +153,8 @@
           "speakerId": "301",
           "spriteName": "Della/Della_nomal",
           "getItemID": 103,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 8,
@@ -147,7 +162,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 303,
-          "getItemType": 2
+          "getItemType": 2,
+          "soundName": ""
         }
       ]
     },
@@ -163,7 +179,8 @@
           "speakerId": "302",
           "spriteName": "Kamilla/Kamilla_angry",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 2,
@@ -171,7 +188,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_angry",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 3,
@@ -179,7 +197,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_angry",
           "getItemID": 204,
-          "getItemType": 1
+          "getItemType": 1,
+          "soundName": ""
         }
       ]
     },
@@ -195,7 +214,8 @@
           "speakerId": "304",
           "spriteName": "HermanHomes/HermanHomes_embarrassment2",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 2,
@@ -203,7 +223,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 3,
@@ -211,7 +232,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 4,
@@ -219,7 +241,8 @@
           "speakerId": "304",
           "spriteName": "HermanHomes/HermanHomes_nomal",
           "getItemID": 304,
-          "getItemType": 2
+          "getItemType": 2,
+          "soundName": ""
         },
         {
           "lineNum": 5,
@@ -227,7 +250,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 6,
@@ -235,7 +259,8 @@
           "speakerId": "304",
           "spriteName": "HermanHomes/HermanHomes_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 7,
@@ -243,7 +268,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     },
@@ -259,7 +285,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 2,
@@ -267,7 +294,8 @@
           "speakerId": "306",
           "spriteName": "ManSilhouette/ManSilhouette_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     },
@@ -283,7 +311,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 2,
@@ -291,7 +320,8 @@
           "speakerId": "306",
           "spriteName": "ManSilhouette/ManSilhouette_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 3,
@@ -299,7 +329,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 4,
@@ -307,7 +338,8 @@
           "speakerId": "306",
           "spriteName": "ManSilhouette/ManSilhouette_nomal",
           "getItemID": 30601,
-          "getItemType": 3
+          "getItemType": 3,
+          "soundName": ""
         },
         {
           "lineNum": 5,
@@ -315,7 +347,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     },
@@ -331,7 +364,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 2,
@@ -339,7 +373,8 @@
           "speakerId": "305",
           "spriteName": "WomanSilhouette/WomanSilhouette_nomal",
           "getItemID": 305,
-          "getItemType": 2
+          "getItemType": 2,
+          "soundName": ""
         }
       ]
     },
@@ -355,7 +390,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 2,
@@ -363,7 +399,8 @@
           "speakerId": "302",
           "spriteName": "Kamilla/Kamilla_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 3,
@@ -371,7 +408,8 @@
           "speakerId": "305",
           "spriteName": "WomanSilhouette/WomanSilhouette_nomal",
           "getItemID": 30501,
-          "getItemType": 3
+          "getItemType": 3,
+          "soundName": ""
         },
         {
           "lineNum": 4,
@@ -379,7 +417,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 5,
@@ -387,7 +426,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     },
@@ -405,7 +445,8 @@
           "speakerId": "",
           "spriteName": "",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 2,
@@ -413,7 +454,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     },
@@ -429,7 +471,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     },
@@ -445,7 +488,8 @@
           "speakerId": "",
           "spriteName": "",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 2,
@@ -453,7 +497,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     },
@@ -469,7 +514,8 @@
           "speakerId": "",
           "spriteName": "",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         },
         {
           "lineNum": 2,
@@ -477,7 +523,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 101,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     },
@@ -493,7 +540,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 203,
-          "getItemType": 1
+          "getItemType": 1,
+          "soundName": ""
         }
       ]
     },
@@ -509,7 +557,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 202,
-          "getItemType": 1
+          "getItemType": 1,
+          "soundName": ""
         }
       ]
     },
@@ -525,7 +574,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 201,
-          "getItemType": 1
+          "getItemType": 1,
+          "soundName": ""
         }
       ]
     },
@@ -541,7 +591,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 102,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     },
@@ -557,7 +608,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 104,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     },
@@ -573,7 +625,8 @@
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
-          "getItemType": 0
+          "getItemType": 0,
+          "soundName": ""
         }
       ]
     }

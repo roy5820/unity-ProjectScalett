@@ -1,17 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
-    private static SoundManager instance;
+    public static SoundManager instance;
     //배경음 관련 변수
     public AudioSource bgSound;
     public AudioClip bgClip;
 
     //효과음 관련 변수
     public AudioSource sfxSound;
+
+    //현재 오디오 믹서
+    public AudioMixer myMixer;
 
     private void Awake()
     {
@@ -26,6 +30,13 @@ public class SoundManager : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
+
+        //기존의 음향값 반영
+        float bgmValue = PlayerPrefs.GetFloat("BGM");
+        myMixer.SetFloat("BGM", bgmValue);
+
+        float sfxValue = PlayerPrefs.GetFloat("SFX");
+        myMixer.SetFloat("SFX", sfxValue);
     }
     
     public void BgSoundPlay(AudioClip clip)
@@ -39,7 +50,7 @@ public class SoundManager : MonoBehaviour
     public void SfxSoundPlay(AudioClip clip)
     {
         sfxSound.clip = clip;
-        sfxSound.loop = true;
+        sfxSound.loop = false;
         sfxSound.volume = 1.0f;
         sfxSound.Play();
     }

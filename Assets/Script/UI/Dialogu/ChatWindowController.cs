@@ -12,6 +12,7 @@ public class ChatWindowController : MonoBehaviour
     public Line[] TalkLines = null; //대화로그가 저장될 배열변수 - 해당 프리펩을 생성하는 곳에서 TalkLines값을 설정해줘야함
     public int ThisLineNum; //현제 볼 Line 배열의 번호
     string ImgPath = "Image/Character/"; //캐릭터 이미지 경로
+    string SFXPath = "Sound/SFX/";//효과음 경로
 
     public GameObject TalkerImgBox;//말하는 캐릭터 이미지가 드러갈 이미지
     public GameObject TalkerNameBox;//말하는 캐릭터의 이름이 드러갈 이름
@@ -77,6 +78,17 @@ public class ChatWindowController : MonoBehaviour
                 StartCoroutine(PrintText(TalkLog, 0.025f));
             else
                 ChatTextBox.GetComponent<Text>().text = null;
+
+            //효과음 가져와 데이터가 있으면 적용
+            string SFXSound = TalkLines[NowLineNum].soundName;
+            if(SFXSound != null)
+            {
+                AudioClip getSFXSound = Resources.Load<AudioClip>(SFXPath+SFXSound);
+                SoundManager.instance.SfxSoundPlay(getSFXSound);
+            }
+            else
+                SoundManager.instance.SfxSoundPlay(null);
+                
         }
         //데이터가 없으면 자동으로 삭제
         else

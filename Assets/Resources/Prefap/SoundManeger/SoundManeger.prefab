@@ -49,6 +49,7 @@ MonoBehaviour:
   bgSound: {fileID: 5866519405085136204}
   bgClip: {fileID: 8300000, guid: 10ea5ebec65066541aea6093f68fe6d9, type: 3}
   sfxSound: {fileID: 7218618529459342256}
+  myMixer: {fileID: 24100000, guid: b17291ec6e26afb4f8fe54bc7004cb53, type: 2}
 --- !u!82 &5866519405085136204
 AudioSource:
   m_ObjectHideFlags: 0

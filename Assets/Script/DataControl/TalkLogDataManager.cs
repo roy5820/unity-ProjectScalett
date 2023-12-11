@@ -13,6 +13,7 @@ public class Line
     public string spriteName;
     public int getItemID;
     public int getItemType;
+    public string soundName;
 }
 
 //
