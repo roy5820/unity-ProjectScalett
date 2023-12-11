@@ -300,6 +300,7 @@ MonoBehaviour:
       LogID: 1005
       GetTestimonyID: 0
       isStatus: 0
+      BtnText: "\uC9C0\uAE08 \uC0C1\uD669\uC5D0 \uB300\uD558\uC5EC"
 --- !u!114 &8886947563516561429
 MonoBehaviour:
   m_ObjectHideFlags: 0

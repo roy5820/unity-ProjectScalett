@@ -15,18 +15,6 @@ public class TMP : MonoBehaviour
         float bgmValue;
         myMixer.GetFloat("BGM", out bgmValue);
         bgmAudioSlider.value = bgmValue;
-        Debug.Log(bgmValue);
-
-        float sfxValue;
-        myMixer.GetFloat("SFX", out sfxValue);
-        sfxAudioSlider.value = sfxValue;
-    }
-
-    private void OnEnable()
-    {
-        float bgmValue;
-        myMixer.GetFloat("BGM", out bgmValue);
-        bgmAudioSlider.value = bgmValue;
 
         float sfxValue;
         myMixer.GetFloat("SFX", out sfxValue);
@@ -41,13 +29,12 @@ public class TMP : MonoBehaviour
             sound = -80f;
 
         PlayerPrefs.SetFloat("BGM", sound);
-        Debug.Log(sound + ", " + PlayerPrefs.GetFloat("BGM"));
         myMixer.SetFloat("BGM", sound);
     }
 
     public void SfxAudioControl()
     {
-        float sound = bgmAudioSlider.value;
+        float sound = sfxAudioSlider.value;
 
         if (sound == -40f)
             sound = -80f;

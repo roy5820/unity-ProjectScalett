@@ -142,7 +142,7 @@
           "lineNum": 6,
           "log": "아! 알겠습니다! 제가 메이드장을 모셔오겠습니다.",
           "speakerId": "306",
-          "spriteName": "ManSilhouette/ManSilhouette_nomal",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
           "getItemID": 306,
           "getItemType": 2,
           "soundName": ""
@@ -292,7 +292,7 @@
           "lineNum": 2,
           "log": "아닙니다. 제가 도울 일이 있으면 최선을 다 해 돕겠습니다.",
           "speakerId": "306",
-          "spriteName": "ManSilhouette/ManSilhouette_nomal",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
@@ -318,7 +318,7 @@
           "lineNum": 2,
           "log": "본 건 아닙니다만 201호를 정리하던 당시 벽너머에서 무언가 소리가 들렸어요.",
           "speakerId": "306",
-          "spriteName": "ManSilhouette/ManSilhouette_nomal",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
@@ -336,7 +336,7 @@
           "lineNum": 4,
           "log": "소리가 작아 제대로 듣지는 못했고, 무언가 끌리는 듯한? 소리였어요.",
           "speakerId": "306",
-          "spriteName": "ManSilhouette/ManSilhouette_nomal",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
           "getItemID": 30601,
           "getItemType": 3,
           "soundName": ""
@@ -371,7 +371,7 @@
           "lineNum": 2,
           "log": "저는 라운지에서 손님을 대접하고 있었습니다.",
           "speakerId": "305",
-          "spriteName": "WomanSilhouette/WomanSilhouette_nomal",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
           "getItemID": 305,
           "getItemType": 2,
           "soundName": ""
@@ -406,7 +406,7 @@
           "lineNum": 3,
           "log": "맞습니다. 그 커피 메이드장님께서 직접 타주신걸로 기억합니다",
           "speakerId": "305",
-          "spriteName": "WomanSilhouette/WomanSilhouette_nomal",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
           "getItemID": 30501,
           "getItemType": 3,
           "soundName": ""

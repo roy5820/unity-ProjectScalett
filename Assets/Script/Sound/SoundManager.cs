@@ -17,6 +17,16 @@ public class SoundManager : MonoBehaviour
     //현재 오디오 믹서
     public AudioMixer myMixer;
 
+    private void Start()
+    {
+        //기존의 음향값 반영
+        float bgmValue = PlayerPrefs.GetFloat("BGM");
+        myMixer.SetFloat("BGM", bgmValue);
+
+        float sfxValue = PlayerPrefs.GetFloat("SFX");
+        myMixer.SetFloat("SFX", sfxValue);
+    }
+
     private void Awake()
     {
         if (instance == null)
@@ -24,19 +34,12 @@ public class SoundManager : MonoBehaviour
             instance = this;
             BgSoundPlay(bgClip);
         }
-        else if (instance == this)
+        else if (instance != this)
         {
             Destroy(gameObject);
         }
 
         DontDestroyOnLoad(gameObject);
-
-        //기존의 음향값 반영
-        float bgmValue = PlayerPrefs.GetFloat("BGM");
-        myMixer.SetFloat("BGM", bgmValue);
-
-        float sfxValue = PlayerPrefs.GetFloat("SFX");
-        myMixer.SetFloat("SFX", sfxValue);
     }
     
     public void BgSoundPlay(AudioClip clip)

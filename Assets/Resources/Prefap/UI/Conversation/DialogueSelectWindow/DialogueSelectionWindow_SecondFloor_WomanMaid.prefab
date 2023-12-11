@@ -381,12 +381,14 @@ MonoBehaviour:
       LogID: 1008
       GetTestimonyID: 0
       isStatus: 2
+      BtnText: "\uC0AC\uAC74 \uB2F9\uC2DC\uC5D0 \uB300\uD558\uC5EC"
     - ButtonIndex: 2
       Button: {fileID: 8651865168800030429}
       KeyID: 204
       LogID: 1009
       GetTestimonyID: 0
       isStatus: 2
+      BtnText: "\uD53C\uD574\uC790\uC5D0 \uB300\uD558\uC5EC"
 --- !u!114 &8886947563516561429
 MonoBehaviour:
   m_ObjectHideFlags: 0

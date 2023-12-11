@@ -18,6 +18,7 @@ public class DialogusSelectionController : MonoBehaviour
         public int LogID;//불러올 대화 LogID
         public int GetTestimonyID;//획득할 증언 ID
         public int isStatus = 0;//버튼 상태값 0:안읽음 1: 읽음 2: 잠김
+        public string BtnText = "";//버튼에 표기될 이름
     }
 
     //대화버튼 정보들을 갖는 리스트 객체
@@ -30,7 +31,7 @@ public class DialogusSelectionController : MonoBehaviour
     public TalkButtonDatas ButtonDatas;//대화버튼 데이터를
     private string dataName = null; //데이터베이스에 저장될 데이터명
 
-    private string ImgPath = "Image/UI/Button/";//버튼 이미지 가져올 경로
+    private string ImgPath = "Image/UI/Button/Conversation/";//버튼 이미지 가져올 경로
 
     private void Start()
     {
@@ -95,19 +96,26 @@ public class DialogusSelectionController : MonoBehaviour
                 }
             }
 
-
-
-            //버튼들 상태별 이미지 적용
-            if (ButtonData.isStatus > 0) {
+            //버튼들 상태별 이미지 적용 및 텍스트 적용
+            if (ButtonData.isStatus >= 0) {
                 Sprite ButtonImg = null;
+                if (ButtonData.isStatus == 0)
+                {
+                    ButtonData.Button.GetComponentInChildren<Text>().text = ButtonData.BtnText;//텍스트 설정
+                }
                 if (ButtonData.isStatus == 1)
+                {
                     ButtonImg = Resources.Load<Sprite>(ImgPath + "ChatSelectButton_read");//버튼 이미지 가져오기
+                }
                 else if (ButtonData.isStatus == 2)
+                {
+                    ButtonData.Button.GetComponentInChildren<Text>().text = "? ? ? ? ? ? ? ? ? ?";//????로 텍스트 설정
                     ButtonImg = Resources.Load<Sprite>(ImgPath + "ChatSelectButton_lock");//버튼 이미지 가져오기
+                }
+                
                 if (ButtonImg != null)
                     ButtonData.Button.GetComponent<Image>().sprite = ButtonImg; //버튼 이미지 적용
             }
-
         }
     }
 
