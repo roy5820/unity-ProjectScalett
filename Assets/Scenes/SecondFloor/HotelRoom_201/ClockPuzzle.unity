@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 1006664487}
   - component: {fileID: 1006664492}
   - component: {fileID: 1006664491}
+  - component: {fileID: 1006664493}
   - component: {fileID: 1006664490}
   m_Layer: 5
   m_Name: placeTingsBtn
@@ -470,7 +471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1006664487
 RectTransform:
   m_ObjectHideFlags: 0
@@ -483,7 +484,7 @@ RectTransform:
   m_LocalScale: {x: 0.926, y: 0.926, z: 0.926}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1110641872}
+  m_Father: {fileID: 1775368989}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -535,9 +536,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: placeThingsController, Assembly-CSharp
-        m_MethodName: OnPlaceObj
+      - m_Target: {fileID: 1006664493}
+        m_TargetAssemblyTypeName: AddClockItem, Assembly-CSharp
+        m_MethodName: OnAddItem
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -585,6 +586,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006664486}
   m_CullTransparentMesh: 1
+--- !u!114 &1006664493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006664486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eff8071d332ae864184e1e7f9a707478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataName: puzzle_ClockPuzzle_AddItem
+  HourHourHand: {fileID: 1676380278}
+  MinuteHand: {fileID: 1165358009}
 --- !u!1 &1110641868
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +693,6 @@ RectTransform:
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 1006664487}
   - {fileID: 1775368989}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -720,7 +735,7 @@ RectTransform:
   m_Children:
   - {fileID: 1579139469}
   m_Father: {fileID: 1775368989}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1168,7 +1183,7 @@ RectTransform:
   m_Children:
   - {fileID: 999247135}
   m_Father: {fileID: 1775368989}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1287,10 +1302,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1006664487}
   - {fileID: 1165358010}
   - {fileID: 1676380279}
   m_Father: {fileID: 1110641872}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

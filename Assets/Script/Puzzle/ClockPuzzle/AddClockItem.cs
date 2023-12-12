@@ -36,7 +36,7 @@ public class AddClockItem : MonoBehaviour
         {
             MinuteHand.SetActive(true);
         }
-        else if(AddItem2 == 2)
+        else if(AddItem2 == 1)
         {
             HourHourHand.SetActive(true);
         }
@@ -46,15 +46,19 @@ public class AddClockItem : MonoBehaviour
     public void OnAddItem()
     {
         int thisItem = GameManager.instance.SelectItemId;
+        Debug.Log(thisItem);
         //분침 활성화
         if (thisItem == 102)
         {
-            AddItem1 = 1;
+            
+            GameManager.instance.DelItem(0, 102);//사용 아이템 제거
+            AddItem1 = 1;//활성화
         }
         //시침 활성화
         else if(thisItem == 104)
         {
-            AddItem2 = 2;
+            GameManager.instance.DelItem(0, 104);//사용 아이템 제거
+            AddItem2 = 1;//활성화
 
         }
     }
