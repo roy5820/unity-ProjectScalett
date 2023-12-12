@@ -372,6 +372,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 8.352417
       objectReference: {fileID: 0}
+    - target: {fileID: 1608139249593096659, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1608139249776323456, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: m_Name
       value: PlayerUICavas

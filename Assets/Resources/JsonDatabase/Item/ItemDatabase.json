@@ -92,14 +92,14 @@
       "name": "여자 직원 A",
       "age": "37",
       "job": "여자 메이드",
-      "spriteName": "WomanSilhouette/WomanSilhouette_nomal"
+      "spriteName": "Silhouette/ManOccupationSilhouette"
     },
     {
       "id": "306",
       "name": "남자 직원 A",
       "age": "34",
       "job": "남자 집사",
-      "spriteName": "ManSilhouette/ManSilhouette_nomal"
+      "spriteName": "Silhouette/WomanOccupationSilhouette"
     }
 
 

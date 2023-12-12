@@ -13,7 +13,8 @@ public class electricBoxMainController : MonoBehaviour
     [System.Serializable]
     public class LightBulb
     {
-        public GameObject bulbObj;
+        public GameObject bulbObj;//전구 오브젝트
+        public GameObject btnObj;//버튼 오브젝트
         public int bulbStatus;//전구 상태 1: 켜짐 -1: 꺼짐
     }
     [SerializeField]
@@ -21,6 +22,14 @@ public class electricBoxMainController : MonoBehaviour
 
     [SerializeField]
     private string dataName = "puzzle_electricalPuzzle"; //데이터베이스에 저장될 데이터명
+
+    //상태별 전환할 전구와 버튼들의 이미지
+    public Sprite turnOnBulbImg;//켜진 전구 이미지
+    public Sprite turnOffBulbImg;//꺼진 전구 이미지
+    public Sprite turnOnBtnImg;//켜진 버튼 이미지
+    public Sprite turnOffBtnImg;//꺼진 버튼 이미지
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -51,12 +60,14 @@ public class electricBoxMainController : MonoBehaviour
                 if (bulb.bulbStatus == 1)
                 {
                     turnOnBulbCnt++;
-                    bulb.bulbObj.GetComponent<Image>().color = Color.yellow;
+                    bulb.bulbObj.GetComponent<Image>().sprite = turnOnBulbImg;
+                    bulb.btnObj.GetComponent<Image>().sprite = turnOnBtnImg;
                 }
                 //꺼진 상태
                 else
                 {
-                    bulb.bulbObj.GetComponent<Image>().color = Color.white;
+                    bulb.bulbObj.GetComponent<Image>().sprite = turnOffBulbImg;
+                    bulb.btnObj.GetComponent<Image>().sprite = turnOffBtnImg;
                 }
             }
 

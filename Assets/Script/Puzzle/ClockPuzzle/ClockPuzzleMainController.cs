@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClockPuzzleMainController : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class ClockPuzzleMainController : MonoBehaviour
     private string dataName = "puzzle_ClockPuzzle"; //데이터베이스에 저장될 데이터명
 
     [SerializeField]
-    GameObject GetClearItemObj;//클리어시 활성화할 클리어 아이템 획득 오브젝트
+    string ClearSceneName = "";//클리어 시 이동할 씬 이름
 
     [SerializeField]
     GameObject[] clockHands;//시계 침
@@ -57,8 +58,7 @@ public class ClockPuzzleMainController : MonoBehaviour
         //이미 클리어 했을 경우 해당 오브젝트 제거 및 클리어 아이템 활성화
         if (isPuzzleSatus == 1)
         {
-            GetClearItemObj.SetActive(true);//클리어 아이템 획득 오브젝트 활성화
-            Destroy(this.gameObject);//해당 오브젝트 삭제
+            SceneManager.LoadScene(ClearSceneName);
         }
     }
 
