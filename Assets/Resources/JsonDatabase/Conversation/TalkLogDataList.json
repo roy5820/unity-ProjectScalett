@@ -21,7 +21,7 @@
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
           "getItemType": 0,
-          "soundName":  ""
+          "soundName": ""
         },
         {
           "lineNum": 3,
@@ -425,6 +425,32 @@
           "log": "질문에 답변해 주셔서 감사합니다.",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+
+    {
+      "talkID": "1010",
+      "sceneName": "Cellar1",
+      "talkName": "지하실 입장(일러스트)",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "말도 안돼! 이 수많은 시신들은 뭐죠?",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_angry",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "끔찍하군. 아마 이번 사건의 범인의 소행일 것 같아",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_angry",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""

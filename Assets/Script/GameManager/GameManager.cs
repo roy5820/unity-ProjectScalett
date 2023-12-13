@@ -198,6 +198,8 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
+
+        OnSave();//삭제 후 저장
     }
 
     //ObjStatusDataBase를 컨트롤 하는 함수 Mode: 0:읽기 1:쓰기 

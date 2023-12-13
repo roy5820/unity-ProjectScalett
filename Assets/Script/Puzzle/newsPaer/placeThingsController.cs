@@ -37,7 +37,6 @@ public class placeThingsController : MonoBehaviour
         {
             GameManager.instance.DelItem(0, PlaceItemID);
             PlaceObj.SetActive(true);
-            Destroy(this.gameObject);
         }
     }
 

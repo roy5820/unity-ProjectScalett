@@ -11,7 +11,10 @@ public class CookwarePuzzleClearChecker : MonoBehaviour
     private string dataName = "puzzle_CookwarePuzzle"; //데이터베이스에 저장될 데이터명
 
     [SerializeField]
-    GameObject GetClearItemObj;//클리어시 활성화할 클리어 아이템 획득 오브젝트
+    int GetClearItemID = 105;//클리어시 얻는 아이템 ID
+    [SerializeField]
+    int GetClearItemType = 0;//아이템 타입
+
 
     //요리도구가 담길 배열
     [SerializeField]
@@ -29,6 +32,12 @@ public class CookwarePuzzleClearChecker : MonoBehaviour
             int getObjStatus = GameManager.instance.ControllObjStatusData(0, dataName, 0);//게임 메니저에서 데이터 가져오기
             if (getObjStatus >= 0)
                 isPuzzleSatus = getObjStatus;
+        }
+
+        //이미 클리어 되어있을 경우 해당 컴포넌트 제거
+        if (isPuzzleSatus == 1)
+        {
+            Destroy(this.gameObject.GetComponent<CookwarePuzzleClearChecker>());//해당 오브젝트 삭제
         }
     }
 
@@ -50,17 +59,18 @@ public class CookwarePuzzleClearChecker : MonoBehaviour
                     {
                         ClearCnt++;
                     }
-                        
                 }
                 if (ClearCnt == ClearCookwaresParents.Length)
                     isPuzzleSatus = 1;
             }
         }
+
         //이미 클리어 했을 경우 해당 오브젝트 제거 및 클리어 아이템 활성화
         if(isPuzzleSatus == 1)
         {
-            GetClearItemObj.SetActive(true);//클리어 아이템 획득 오브젝트 활성화
-            Destroy(this.gameObject);//해당 오브젝트 삭제
+            GameManager.instance.AddItem(GetClearItemType, GetClearItemID);//아이템 획득
+            PlayerUIController.instance.OpenItemInspectorWindow(GetClearItemType, GetClearItemID);//아이템 정보창
+            Destroy(this.gameObject.GetComponent<CookwarePuzzleClearChecker>());//해당 오브젝트 삭제
         }
     }
 
