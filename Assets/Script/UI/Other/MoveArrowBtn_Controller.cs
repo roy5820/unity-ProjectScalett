@@ -26,7 +26,7 @@ public class MoveArrowBtn_Controller : MonoBehaviour
             if (getObjStatus >= 0)
                 isStatus = getObjStatus;
         }
-
+        Debug.Log(GameManager.instance.ChkItem(KeyItemType, KeyItemID));
         //잠김 상태일 경우 키 아이템이 있으면 이동 가능 상태로 전환
         if (isStatus == 1 && GameManager.instance.ChkItem(KeyItemType, KeyItemID))
         {

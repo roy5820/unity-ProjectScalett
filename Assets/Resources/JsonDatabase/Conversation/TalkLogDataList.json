@@ -432,7 +432,22 @@
       ]
     },
 
-
+    {
+      "talkID": "4001",
+      "sceneName": "MoveArrow",
+      "talkName": "잠겨있는 화면이동 버튼 클릭 시 ",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "203호에 먼저 들러야해!",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
 
     {
       "talkID": "5001",
