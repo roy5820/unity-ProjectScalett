@@ -595,6 +595,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2464531291486231820, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9.178589
+      objectReference: {fileID: 0}
+    - target: {fileID: 2807449336280777529, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.1459961
+      objectReference: {fileID: 0}
     - target: {fileID: 2850356519650091472, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -603,13 +611,53 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5036878472813720526, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036878472813720526, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5036878472813720526, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6107755227834537530, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: DialogueSelectPre
       value: 
       objectReference: {fileID: 5728027424786395748, guid: 26a4499fe30ca9f419635f12f47adae3, type: 3}
+    - target: {fileID: 6850346320904197495, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6850346320904197495, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7070701730543211184, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7070701730543211184, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7159526402436249156, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: SecondFloor_Corridor
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467104761109834934, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467104761109834934, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7467104761109834934, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7609945816643424392, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: SceneName
@@ -626,6 +674,10 @@ PrefabInstance:
     - target: {fileID: 8229988324609503513, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410701087447727883, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.1459961
       objectReference: {fileID: 0}
     - target: {fileID: 8441462784122567163, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: m_AnchorMax.x
@@ -818,7 +870,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 48c81bd1048ae344687d938a01ed50d6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a9c84a30155d4804ca01212b6fa99e06, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
