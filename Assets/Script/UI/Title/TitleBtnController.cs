@@ -13,8 +13,8 @@ public class TitleBtnController : MonoBehaviour
     private void Awake()
     {
         //주소값 초기화
-        HaveItemDataJsonPath = Path.Combine(Application.streamingAssetsPath, "InGameData/HaveItemDataBase.json");
-        ObjStatusDataJsonPath = Path.Combine(Application.streamingAssetsPath, "InGameData/ObjStatusDataBase.json");
+        HaveItemDataJsonPath = Path.Combine(Application.streamingAssetsPath, "HaveItemDataBase.json");
+        ObjStatusDataJsonPath = Path.Combine(Application.streamingAssetsPath, "ObjStatusDataBase.json");
 }
 
     public void OnNewStartBtn(string SceneName)

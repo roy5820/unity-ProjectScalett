@@ -64,8 +64,8 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
-        HaveItemDataPath = Path.Combine(Application.streamingAssetsPath, "InGameData/HaveItemDataBase.json");//보유 아이템 JSON파일 경로 초기화
-        ObjStatusDataPath = Path.Combine(Application.streamingAssetsPath, "InGameData/ObjStatusDataBase.json");//오브젝트 상태값 JSON파일 경로 초기화
+        HaveItemDataPath = Path.Combine(Application.streamingAssetsPath, "HaveItemDataBase.json");//보유 아이템 JSON파일 경로 초기화
+        ObjStatusDataPath = Path.Combine(Application.streamingAssetsPath, "ObjStatusDataBase.json");//오브젝트 상태값 JSON파일 경로 초기화
 
     //JSON파일 읽어 오기
     OnLoadJsonFile();
