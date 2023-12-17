@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5e5d3f8872788034693b87fc5a94f47d
+guid: 8d2093113383c8541989d097168b0fbc
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,19 +131,19 @@ TextureImporter:
       name: HermanHomes_embarrassment2_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 37
-        width: 460
-        height: 450
-      alignment: 9
-      pivot: {x: 0.49878487, y: 0.0018885719}
+        x: 70
+        y: 183
+        width: 2329
+        height: 2189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db39f3f7e2165d8428e5c787a07ad030
-      internalID: 2140422335
+      spriteID: a5326c03397f3d640aea0956c86ff42d
+      internalID: -1007724731
       vertices: []
       indices: 
       edges: []
@@ -159,7 +159,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      HermanHomes_embarrassment2_0: 2140422335
+      HermanHomes_embarrassment2_0: -1007724731
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

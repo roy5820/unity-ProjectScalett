@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SecondFloor/HotelRoom_201/HotelRoom_201_2_ClockPuzzle.unity
     guid: a34e8fc00a7c1584c9e1574e0ce874c3
   - enabled: 1
+    path: Assets/Scenes/SecondFloor/HotelRoom_201/HotelRoom_201_2_OpenWall.unity
+    guid: 97d6dee2057e40842925230ea8ef57b4
+  - enabled: 1
     path: Assets/Scenes/FirstPloor/Lounge/HotelLounge1.unity
     guid: fee287c62e7d659478ee38f4b51462b8
   - enabled: 1

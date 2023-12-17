@@ -91,7 +91,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e7f5794ebcb8d4383edab48f3db3a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChatLogID: 3001
+  CutScenes:
+  - ChatLogID: 0
+    isOpenLog: 0
+    CutSceneImgName: 
+  CutSceneImgObj: {fileID: 3345085327687910205}
 --- !u!114 &4964939281734205867
 MonoBehaviour:
   m_ObjectHideFlags: 0

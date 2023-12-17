@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7f72756e28d829d4f8fd7ad99f2a0b4c
+guid: d8d44a8a4ba113d4785b42715b2c6913
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -131,19 +131,19 @@ TextureImporter:
       name: HermanHomes_smil_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 35
-        width: 460
-        height: 450
-      alignment: 9
-      pivot: {x: 0.49878487, y: -0.0005957794}
+        x: 70
+        y: 183
+        width: 2329
+        height: 2189
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96f2ef803f1a1f445be094288112f41f
-      internalID: -1476088825
+      spriteID: ec40b296ec9342749be07743a6264d4e
+      internalID: -231531641
       vertices: []
       indices: 
       edges: []
@@ -159,7 +159,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      HermanHomes_smil_0: -1476088825
+      HermanHomes_smil_0: -231531641
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

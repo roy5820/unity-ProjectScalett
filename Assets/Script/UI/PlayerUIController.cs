@@ -129,7 +129,7 @@ public class PlayerUIController : MonoBehaviour
             Chatlog.GetComponent<ChatWindowController>().CallObj = CallObj; //호출 오브젝트 값 설정
         Chatlog.GetComponent<ChatWindowController>().LogID = LogID; //호출할 대화로그 ID 값 설정
         Chatlog.GetComponent<ChatWindowController>().CallObj_Status = CallObj_Status; //호출 오브젝트 상태값 설정
-
+        
         Chatlog.SetActive(true);//대화창 프리펩 활성화
     }
 
@@ -148,12 +148,21 @@ public class PlayerUIController : MonoBehaviour
     }
 
     //CutScene창 띄우는 함수
-    public void OpenCutSceneWindow(string CutSceneName)
+    public void OpenCutSceneWindow(string CutSceneName, GameObject callBackObj = null, string callBackFuntion = null, string parameter = null)
     {
         string CutScenePath = "Prefap/UI/CutScene/"; //컷씬 프리펩 위치
 
         GameObject CutScenePre = Resources.Load<GameObject>(CutScenePath + CutSceneName);//컷씬 프리펩 가져오기
 
+        //콜백 시 함수 호출 관련 처리
+        if (callBackObj != null && callBackFuntion != null)
+        {
+            CutScenePre.GetComponent<CutSceneController>().CallBackObj = callBackObj;
+            CutScenePre.GetComponent<CutSceneController>().CallBackFuntion = callBackFuntion;
+            if (parameter != null)
+                CutScenePre.GetComponent<CutSceneController>().CallBackParameter = parameter;
+        }
+        Debug.Log(1);
         GameObject Prefap = Instantiate(CutScenePre, this.transform);//컷씬 프리펩 생성
     }
 

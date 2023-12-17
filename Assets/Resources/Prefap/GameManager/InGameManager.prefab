@@ -58,7 +58,6 @@ MonoBehaviour:
   ObjStatusDataBase:
     ObjStatus: []
   SelectItemId: 0
-  InGameDataJsonPath: Assets/Resources/JsonDatabase/InGameData
 --- !u!114 &315926264751153863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76,7 +75,7 @@ MonoBehaviour:
     EvidenceItems: []
     CharcterInformation: []
     CharacterTestimony: []
-  jsonFile: {fileID: 4900000, guid: 18e35c35831bbb94bab3689c1264dec9, type: 3}
+  jsonFile: {fileID: 4900000, guid: f2b707fc3ed2d86409ec9b1a43f33868, type: 3}
 --- !u!114 &1342084987748324867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,4 +90,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TalkDataList:
     talkDataList: []
-  jsonFile: {fileID: 4900000, guid: a654c3ee92021c1469a4fd98d9ff240f, type: 3}
+  jsonFile: {fileID: 4900000, guid: 3bcda49b4a7624446825312fc8f25416, type: 3}

@@ -420,14 +420,14 @@ MonoBehaviour:
     - ButtonIndex: 1
       Button: {fileID: 1713326415420607056}
       KeyID: 0
-      LogID: 1006
+      LogID: 1009
       GetTestimonyID: 0
       isStatus: 0
       BtnText: "\uC544\uAE4C \uC77C\uC5D0 \uB300\uD558\uC5EC"
     - ButtonIndex: 2
       Button: {fileID: 2801441090271551313}
       KeyID: 0
-      LogID: 1007
+      LogID: 1010
       GetTestimonyID: 0
       isStatus: 0
       BtnText: "\uC218\uC0C1\uD55C \uC77C\uC5D0 \uB300\uD558\uC5EC"

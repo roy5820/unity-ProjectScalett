@@ -56,6 +56,12 @@
       "name": "살인현장 사진",
       "spriteName": "Evidence/MurderCasePhoto",
       "additionalExplanation": "201호에서 일어난 살인사건 당시 사진. 독살에 의해서 살해당한것 같다."
+    },
+    {
+      "id": "205",
+      "name": "지하실 사진",
+      "spriteName": "Evidence/MurderCasePhoto",
+      "additionalExplanation": "지하실 사진. 지배인의 옷을 입고 있는 시체가 앉아 있다."
     }
   ],
   "CharcterInformation": [
@@ -91,29 +97,121 @@
       "id": "305",
       "name": "여자 직원 A",
       "age": "37",
-      "job": "여자 메이드",
-      "spriteName": "Silhouette/ManOccupationSilhouette"
+      "job": "메이드",
+      "spriteName": "Silhouette/WomanOccupationSilhouette"
     },
     {
       "id": "306",
       "name": "남자 직원 A",
+      "age": "29",
+      "job": "집사",
+      "spriteName": "Silhouette/ManOccupationSilhouette"
+    },
+    {
+      "id": "307",
+      "name": "여자 직원 B",
       "age": "34",
-      "job": "남자 집사",
+      "job": "메이드",
       "spriteName": "Silhouette/WomanOccupationSilhouette"
+    },
+    {
+      "id": "308",
+      "name": "남자 직원 B",
+      "age": "64",
+      "job": "집사",
+      "spriteName": "Silhouette/ManOccupationSilhouette"
+    },
+    {
+      "id": "309",
+      "name": "여자 고객 A",
+      "age": "27",
+      "job": "고객",
+      "spriteName": "Silhouette/WomanCustomerSilhouette"
+    },
+    {
+      "id": "310",
+      "name": "남자 고객 A",
+      "age": "31",
+      "job": "고객",
+      "spriteName": "Silhouette/ManCustomerSilhouette"
+    },
+    {
+      "id": "311",
+      "name": "남자 직원 C",
+      "age": "44",
+      "job": "집사",
+      "spriteName": "Silhouette/ManOccupationSilhouette"
     }
+
 
 
   ],
   "CharacterTestimony": [
     {
+      "id": "30201",
+      "CharcterId": "302",
+      "additionalExplanation": "탐정 객실에 옛날 신문이 수상해 보인다."
+    },
+    {
+      "id": "30202",
+      "CharcterId": "302",
+      "additionalExplanation": "책장에 일기장이 보인다. 가서 읽어보자."
+    },
+    {
+      "id": "30301",
+      "CharcterId": "304",
+      "additionalExplanation": "사건 발생 전 급히 외출하였다. 이유는 말해줄 수 없다."
+    } ,
+    {
+      "id": "30302",
+      "CharcterId": "304",
+      "additionalExplanation": "201호에 머물던 손님들이 사라지거나, 골목길에서 사람들의 유해를 발견한 일들이 있었다."
+    },
+    {
+      "id": "30401",
+      "CharcterId": "303",
+      "additionalExplanation": "201호 손님에게 커피를 타 주었다."
+    },
+    {
       "id": "30501",
       "CharcterId": "305",
-      "additionalExplanation": "피해자의 커피를 메이드장이 집접 타줌"
+      "additionalExplanation": "201호실을 청소하던 도중 벽 너머에서 무언가 끌리는 소리가 들렸다."
+    },
+    {
+      "id": "30502",
+      "CharcterId": "305",
+      "additionalExplanation": "메이드장이 신기하게 생긴 나무 상자를 건들지 말라 하였다. "
     },
     {
       "id": "30601",
       "CharcterId": "306",
-      "additionalExplanation": "사건 전날 청소를 하던 도중 무언가 끌리는 듯한 소리를 들음"
+      "additionalExplanation": "201호에 투숙하시던 손님들이 누군가 자신을 계속 쳐다보고 있는 거 같다고 이야기를 하셨던 적이 있었다."
+    },
+    {
+      "id": "30701",
+      "CharcterId": "307",
+      "additionalExplanation": "지배인님과 함께 호텔에 필요한 자재를 살때마다 먼저 호텔로 보냈다. 그 골목은 유흥가로 가는 골목이다."
+    }
+    ,
+    {
+      "id": "30801",
+      "CharcterId": "308",
+      "additionalExplanation": "늦은 밤에 자주 외출하는 지배인과 남편이 죽은 뒤 메이드장의 분위기가 변했다."
+    },
+    {
+      "id": "30901",
+      "CharcterId": "309",
+      "additionalExplanation": "빨간 머리의 사람들이 피해를 입었다. 피해자도 빨간머리이다."
+    },
+    {
+      "id": "31001",
+      "CharcterId": "310",
+      "additionalExplanation": "호텔에서 묵은 고객들이 죽거나 실종된 소문이 있다."
+    },
+    {
+      "id": "31101",
+      "CharcterId": "311",
+      "additionalExplanation": "간간히 불규칙적으로 주방도구들이 떨어지는 소리가 들린다."
     }
   ]
 }

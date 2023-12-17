@@ -7,7 +7,7 @@
       "lines": [
         {
           "lineNum": 1,
-          "log": "1879년 4월 3일…대저택 살인 사건 범인 ‘존 하이시’ 체포...",
+          "log": "1903년 4월 3일…대저택 살인 사건 범인 ‘존 하이시’ 체포...",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
@@ -16,43 +16,34 @@
         },
         {
           "lineNum": 2,
-          "log": "후… 이번 사건은 이대로 마무리인가... 이제야 쉴 수 있겠군 ",
+          "log": "후… 이번 사건은 이대로 마무리인가... 이제야 쉴 수 있겠군.",
           "speakerId": "301",
-          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         },
         {
           "lineNum": 3,
-          "log": "(누가 문을 두들긴다)",
-          "speakerId": "",
-          "spriteName": "",
+          "log": "탐정님! 큰일입니다! 일어나 보세요!!",
+          "speakerId": "302",
+          "spriteName": "kamilla/Kamilla_surprised",
           "getItemID": 0,
           "getItemType": 0,
-          "soundName": "WoodDoorKnockKnock"
+          "soundName": "start knock"
         },
         {
           "lineNum": 4,
-          "log": "탐정님! 큰일입니다! 일어나 보세요!!",
-          "speakerId": "302",
-          "spriteName": "Kamilla/Kamilla_surprised",
+          "log": "무슨 일이지?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_embarrassment",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         },
         {
           "lineNum": 5,
-          "log": "무슨 일이지?",
-          "speakerId": "301",
-          "spriteName": "JamesBrennan/JamesBrennan_nomal",
-          "getItemID": 0,
-          "getItemType": 0,
-          "soundName": ""
-        },
-        {
-          "lineNum": 6,
-          "log": "201호에서… 사람이 쓰러진 거 같아요!",
+          "log": "201호에서 사람이 쓰러진 거 같아요!",
           "speakerId": "302",
           "spriteName": "Kamilla/Kamilla_surprised",
           "getItemID": 0,
@@ -60,7 +51,7 @@
           "soundName": ""
         },
         {
-          "lineNum": 7,
+          "lineNum": 6,
           "log": "지금 당장 201호로 가야해요!",
           "speakerId": "302",
           "spriteName": "Kamilla/Kamilla_surprised",
@@ -78,7 +69,7 @@
       "lines": [
         {
           "lineNum": 1,
-          "log": "지금 바로 201호로 가야해요.",
+          "log": "201호로 가야해요 ",
           "speakerId": "302",
           "spriteName": "Kamilla/Kamilla_nomal",
           "getItemID": 0,
@@ -87,9 +78,170 @@
         }
       ]
     },
-
     {
       "talkID": "1003",
+      "sceneName": "HotelRoom_203",
+      "talkName": "살인 사건 확인 후 탐정의방 - 호텔에서 노는걸 기대했던 조수 일상 대화",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "으악, 오랜만에 휴가좀 떠나나 했더니, 살인사건이라니요. ",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "이게 무슨 날벼락인지… ",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "머리가 아프군. 기대했을텐데 미안하구만.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "아니예요. 탐정님 때문이 아닌걸요",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "그래",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "어찌됐든 이 사건을 우리가 발견한 이상 그냥 넘어갈 수는 없지않은가?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "하긴 그렇죠. 그나저나 살인사건을 마주하는 것은 항상 적응하기 어렵네요…",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 8,
+          "log": "내 오른팔이라면 당연히 감수해야하지",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 9,
+          "log": "자, 어서 단서를 찾아보도록 하지.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+
+      ]
+    },
+    {
+      "talkID": "1004",
+      "sceneName": "HotelRoom_203",
+      "talkName": "살인 사건 확인 후 탐정의방 -탐정의 방에 있는 옛날 신문을 의심하는 조수 힌트 대화",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "어라, 이 신문 탐정님이 읽으시던 건가요? ",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "19세기 유럽 거리…? 최근 신문이 아니네요 탐정님?",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "paper"
+        },
+        {
+          "lineNum": 3,
+          "log": "흐음.. 이 신문은 뭐지?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "...",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "내가 읽던 것은 아니다만, 원래 여기 있던 신문 같아보이는군.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "그런가요? 왜 옛날 신문이 이곳에 있는지…",
+          "speakerId": "301",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "뭔가 수상쩍네요, 이 신문.",
+          "speakerId": "301",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+
+      ]
+    },
+
+
+    {
+      "talkID": "1005",
       "sceneName": "SecondFloor_Corridor",
       "talkName": "게임 초반 탐정이 방에서 나와 살인의 방으로 가는 복도에서 컷씬",
       "lines": [
@@ -124,16 +276,16 @@
           "lineNum": 4,
           "log": "지금 201호에 사람이 쓰러져 있습니다.",
           "speakerId": "301",
-          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "spriteName": "JamesBrennan/JamesBrennan_angry",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         },
         {
           "lineNum": 5,
-          "log": "시간이 없으니 빨리 문을 열어야 합니다!",
+          "log": "당장 시간이 없으니 빨리 문을 열어야 합니다!",
           "speakerId": "301",
-          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "spriteName": "JamesBrennan/JamesBrennan_angry",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
@@ -145,7 +297,7 @@
           "spriteName": "Silhouette/ManOccupationSilhouette",
           "getItemID": 306,
           "getItemType": 2,
-          "soundName": ""
+          "soundName": "running"
         },
         {
           "lineNum": 7,
@@ -154,7 +306,7 @@
           "spriteName": "Della/Della_nomal",
           "getItemID": 103,
           "getItemType": 0,
-          "soundName": ""
+          "soundName": "key"
         },
         {
           "lineNum": 8,
@@ -169,7 +321,7 @@
     },
 
     {
-      "talkID": "1004",
+      "talkID": "1006",
       "sceneName": "HotelRoom_201",
       "talkName": "게임 초반 살인의 방 첫 입장(일러스트)",
       "lines": [
@@ -204,13 +356,22 @@
     },
 
     {
-      "talkID": "1005",
+      "talkID": "1007",
       "sceneName": "HotelRoom_201",
-      "talkName": "살인 일러스트 본 이후 살인의 방_지배인과 대화",
+      "talkName": "살인 일러스트 본 이후 살인의 방_지배인과 대화(일상)",
       "lines": [
         {
           "lineNum": 1,
-          "log": "큰일이 났다하여 급히 달려왔습니다. 무슨일이 일어난거죠?",
+          "log": "(누군가 뛰어온다.)",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "running"
+        },
+        {
+          "lineNum": 2,
+          "log": "이게.. 무슨일이십니까.",
           "speakerId": "304",
           "spriteName": "HermanHomes/HermanHomes_embarrassment2",
           "getItemID": 0,
@@ -218,35 +379,26 @@
           "soundName": ""
         },
         {
-          "lineNum": 2,
-          "log": "저는 탐정 제임슨 브레넌이라고 합니다. 현재 201호에서 독극물로 인한 살인 사건이 일어났습니다.",
-          "speakerId": "301",
-          "spriteName": "JamesBrennan/JamesBrennan_nomal",
-          "getItemID": 0,
-          "getItemType": 0,
-          "soundName": ""
-        },
-        {
           "lineNum": 3,
-          "log": "당신은 여기 호텔 지배인이십니까?",
-          "speakerId": "301",
-          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "log": "지배인님, 201호 손님께서… ",
+          "speakerId": "306",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         },
         {
           "lineNum": 4,
-          "log": "예...저는 스칼렛 호텔 지배인 허먼 홈스라고 합니다.",
+          "log": "심각한 일이 생겼다 하여 급하게 달려왔는데, 도대체 무슨 일인가요?",
           "speakerId": "304",
-          "spriteName": "HermanHomes/HermanHomes_nomal",
+          "spriteName": "HermanHomes/HermanHomes_embarrassment2",
           "getItemID": 304,
           "getItemType": 2,
           "soundName": ""
         },
         {
           "lineNum": 5,
-          "log": "혹시 호텔 지배인께서는 어디에 계셨습니까?",
+          "log": "저는 탐정 제임슨 브래넌 입니다. 현재 독극물로 인해 201호 여성 손님께서 살해당하셨습니다.",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
@@ -255,16 +407,34 @@
         },
         {
           "lineNum": 6,
-          "log": "저는 잠시 밖에 볼일이 있어 나갔다. 직원이 급히 저를 찾아와 큰일이 생겼다길래 달려왔습니다.",
-          "speakerId": "304",
-          "spriteName": "HermanHomes/HermanHomes_nomal",
+          "log": "혹시 여기 지배인 이십니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         },
         {
           "lineNum": 7,
-          "log": "흠...그렇군요 알겠습니다.",
+          "log": "예예, 맞습니다. 여기 호텔 스칼렛 지배인 허먼 홈스라고 합니다.",
+          "speakerId": "304",
+          "spriteName": "HermanHomes/HermanHomes_embarrassment2",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 8,
+          "log": "꼭 범인을 잡을 수 있도록 도와주십시오 탐정님.",
+          "speakerId": "304",
+          "spriteName": "HermanHomes/HermanHomes_embarrassment2",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 9,
+          "log": "네, 당연하죠. 최선을 다하겠습니다.",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
@@ -273,15 +443,14 @@
         }
       ]
     },
-
     {
-      "talkID": "1006",
+      "talkID": "1008",
       "sceneName": "HotelRoom_201",
-      "talkName": "살인 일러스트 본 이후 살인의 방_남자 직원 A 대화",
+      "talkName": "살인 일러스트 본 이후 살인의 방_지배인과 대화(증언)",
       "lines": [
         {
           "lineNum": 1,
-          "log": "협조 감사합니다.",
+          "log": "지배인께서는 살인이 일어나기 전 어디에 계셨는지 알 수 있을까요?",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
@@ -290,42 +459,16 @@
         },
         {
           "lineNum": 2,
-          "log": "아닙니다. 제가 도울 일이 있으면 최선을 다 해 돕겠습니다.",
-          "speakerId": "306",
-          "spriteName": "Silhouette/ManOccupationSilhouette",
-          "getItemID": 0,
-          "getItemType": 0,
-          "soundName": ""
-        }
-      ]
-    },
-
-    {
-      "talkID": "1007",
-      "sceneName": "HotelRoom_201",
-      "talkName": "살인 일러스트 본 이후 살인의 방_남자 직원 A 대화",
-      "lines": [
-        {
-          "lineNum": 1,
-          "log": "혹시 사건 전날 201호 주변 혹은 호텔 내부에서 수상한 일을 목격한 적이 있습니까?",
-          "speakerId": "301",
-          "spriteName": "JamesBrennan/JamesBrennan_nomal",
-          "getItemID": 0,
-          "getItemType": 0,
-          "soundName": ""
-        },
-        {
-          "lineNum": 2,
-          "log": "본 건 아닙니다만 201호를 정리하던 당시 벽너머에서 무언가 소리가 들렸어요.",
-          "speakerId": "306",
-          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "log": "…그건 어떤 이유로 궁금하신지요..?",
+          "speakerId": "304",
+          "spriteName": "HermanHomes/HermanHomes_embarrassment1",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         },
         {
           "lineNum": 3,
-          "log": "소리라면 어떤 소리인지 기억하십니까?",
+          "log": "현재 가장 가까운 인물부터 조사하는 중이니 협조 해 주시기 바랍니다.",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
@@ -334,46 +477,20 @@
         },
         {
           "lineNum": 4,
-          "log": "소리가 작아 제대로 듣지는 못했고, 무언가 끌리는 듯한? 소리였어요.",
-          "speakerId": "306",
-          "spriteName": "Silhouette/ManOccupationSilhouette",
-          "getItemID": 30601,
-          "getItemType": 3,
+          "log": "사건 발생 전 저는 잠시 급한 일이 있어 외출을 하였습니다. 자세한 사항은 답변하기 어려울 거 같습니다.",
+          "speakerId": "304",
+          "spriteName": "HermanHomes/HermanHomes_embarrassment1",
+          "getItemID": 304,
+          "getItemType": 2,
           "soundName": ""
         },
         {
           "lineNum": 5,
-          "log": "끌리는 소리라... 질문에 응해주셔서 감사합니다.",
+          "log": "그렇군요… 알겠습니다.",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
           "getItemType": 0,
-          "soundName": ""
-        }
-      ]
-    },
-
-    {
-      "talkID": "1008",
-      "sceneName": "SecondFloor_Corridor",
-      "talkName": "살인 일러스트 본 이후 복도_ 여자 직원 A 대화",
-      "lines": [
-        {
-          "lineNum": 1,
-          "log": "살인이 일어나기 전 어디에 계셨습니까?",
-          "speakerId": "301",
-          "spriteName": "JamesBrennan/JamesBrennan_nomal",
-          "getItemID": 0,
-          "getItemType": 0,
-          "soundName": ""
-        },
-        {
-          "lineNum": 2,
-          "log": "저는 라운지에서 손님을 대접하고 있었습니다.",
-          "speakerId": "305",
-          "spriteName": "Silhouette/WomanOccupationSilhouette",
-          "getItemID": 305,
-          "getItemType": 2,
           "soundName": ""
         }
       ]
@@ -381,12 +498,12 @@
 
     {
       "talkID": "1009",
-      "sceneName": "SecondFloor_Corridor",
-      "talkName": "복도에서 살인방에 대한 여자 직원 A 증언",
+      "sceneName": "HotelRoom_201",
+      "talkName": "살인 일러스트 본 이후 살인의 방_남자 직원 A 대화(일상)",
       "lines": [
         {
           "lineNum": 1,
-          "log": "혹시 사망 직전 피해자를 보신적이 있습니까?",
+          "log": "서둘러 와주셔서 감사합니다.",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
@@ -395,25 +512,16 @@
         },
         {
           "lineNum": 2,
-          "log": "어? 제가 봤어요! 빨간 머리 그분 주방에 가서 커피를 받아 오던데요?",
-          "speakerId": "302",
-          "spriteName": "Kamilla/Kamilla_nomal",
+          "log": "아닙니다. 이후에 협조가 필요하시다면 언제든 다시 불러주십시오.",
+          "speakerId": "306",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         },
         {
           "lineNum": 3,
-          "log": "맞습니다. 그 커피 메이드장님께서 직접 타주신걸로 기억합니다",
-          "speakerId": "305",
-          "spriteName": "Silhouette/WomanOccupationSilhouette",
-          "getItemID": 30501,
-          "getItemType": 3,
-          "soundName": ""
-        },
-        {
-          "lineNum": 4,
-          "log": "(메이드가 아닌 메이드 장이 직접 커피를 탔다라...)",
+          "log": "예. 사건의 범인은 반드시 잡을테니 걱정 마십시오.",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
@@ -421,10 +529,10 @@
           "soundName": ""
         },
         {
-          "lineNum": 5,
-          "log": "질문에 답변해 주셔서 감사합니다.",
-          "speakerId": "301",
-          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "lineNum": 4,
+          "log": "저도 열심히 도울게요!",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_smail",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
@@ -434,21 +542,842 @@
 
     {
       "talkID": "1010",
-      "sceneName": "Cellar1",
-      "talkName": "지하실 입장(일러스트)",
+      "sceneName": "HotelRoom_201",
+      "talkName": "살인 일러스트 본 이후 살인의 방_남자 직원 A 대화(증언)",
       "lines": [
         {
           "lineNum": 1,
-          "log": "말도 안돼! 이 수많은 시신들은 뭐죠?",
+          "log": "저.. 탐정님, 이야기하고 싶은 게 있는데요.",
+          "speakerId": "306",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "Knock"
+        },
+        {
+          "lineNum": 2,
+          "log": "다름이 아니라 이전에 201호에 투숙하시던 손님들이 누군가 자신을 계속 쳐다보고 있는 거 같다고 이야기를 하셨던 적이 있었거든요.",
+          "speakerId": "306",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "한두번 들었던 컴플레인이 아니라서, 혹시나 조사에 도움이 될 거 같아서 말씀드려요…",
+          "speakerId": "306",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "아닙니다. 중요한 단서인 것 같군요. 정보 감사합니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "그런 일들이 있었다니…",
           "speakerId": "302",
-          "spriteName": "Kamilla/Kamilla_angry",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+    {
+      "talkID": "1011",
+      "sceneName": "HotelRoom_201",
+      "talkName": "침이 없는 시계에 대해 말하는 조수 대화 (증언)",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "탐정님 이것 좀 보세요.",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_surprised",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         },
         {
           "lineNum": 2,
-          "log": "끔찍하군. 아마 이번 사건의 범인의 소행일 것 같아",
+          "log": "이건… 시계?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "시계를 자세히 보면 시침과 분침이 없는 거 같아요.",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "흠, 침이 없는 시계라…",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "누군가 의도적으로 침을 뺀 걸 까요? 과연 무슨 뜻일지…",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+
+    {
+      "talkID": "1012",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 복도_ 남자 고객 A 대화",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "(어디선가 소란스러운 소리가 들린다.)",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "Hullbaloo"
+        },
+        {
+          "lineNum": 2,
+          "log": "이 옆방에는 도저히 못 있겠어요. 당장 방을 바꿔 주세요!",
+          "speakerId": "310",
+          "spriteName": "Silhouette/ManCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "고객님, 현재 남아있는 객실이 없어 방을 당장 방을 바꿔드리는 것은 어려울 것 같습니다...",
+          "speakerId": "305",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "대신 저희가 최대한 편의를 봐 드릴 테니…",
+          "speakerId": "305",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "그러면 이 끔찍한 곳에서 하루종일 지내라구요? 말이 되는 소릴 하세요! 무슨 수를 써서든 당장 해결 해 달란 말입니다!",
+          "speakerId": "310",
+          "spriteName": "Silhouette/ManCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "휴.. 바깥이 많이 소란스럽네요.",
+          "speakerId": "302",
+          "spriteName": "Kamilla/kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "사건이 사건인지라 손님들도 많이 민감할거다. 우리가 최대한 빠르게 해결하도록 하지.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 305,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+
+    {
+      "talkID": "1013",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 복도_ 남자 고객 A 대화 증언",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "이럴 줄 알았어… 소문이 안좋은건 알고 있었지만….",
+          "speakerId": "310",
+          "spriteName": "Silhouette/ManCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "손님, 저는 탐정 제임슨 브래넌 이라고 합니다. 혹시 이 호텔에 대해 아시는 게 있으십니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "예전에 거래했던 회사에서… 이 호텔에서 묵은 고객들이 죽거나 실종된다고 하더라고요.",
+          "speakerId": "310",
+          "spriteName": "Silhouette/ManCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "(고객들이 죽거나 실종되었다라..)",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "위험하다는 사실을 알고 있으면서 이 호텔에 묵으신 이유가 있으신지요?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "여기가 좋아서 머문게 아니라구요!",
+          "speakerId": "310",
+          "spriteName": "Silhouette/ManCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "내일까지 급히 거래처로 가야 하는데, 회사에서 하필 이 호텔로 잡아주는 바람에..!!",
+          "speakerId": "310",
+          "spriteName": "Silhouette/ManCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 8,
+          "log": "(어쩔 수 없었구만..) 아무튼 정보 감사드립니다. ",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+    {
+      "talkID": "1014",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 복도_ 여자 직원 A 대화 증언",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "탐정님, 여기 커피 한잔 드세요.",
+          "speakerId": "305",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "water"
+        },
+        {
+          "lineNum": 2,
+          "log": "감사히 잘 마시겠습니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "(커피를 마신다)",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "아무쪼록 사건을 해결해주시길 부탁드려요.",
+          "speakerId": "305",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "걱정마세요!",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+    {
+      "talkID": "1015",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 복도_ 여자 직원 A 대화 소리 증언",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "혹시 사건 전날 201호 주변 혹은 호텔 내부에서 수상한 일을 목격한 적이 있습니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "본 건 아니지만, 전에 201호실을 청소하던 도중 벽 너머에서 무언가 소리가 들렸어요. ",
+          "speakerId": "305",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "소리라… 어떤 소리인지 기억하십니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "자세히는 기억이 나지는 않지만 무언가...무언가 질질 끌리는 듯한 소리였어요.",
+          "speakerId": "305",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "끌리는 소리… 질문에 답해주셔서 감사합니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+    {
+      "talkID": "1016",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 복도_ 여자 직원 A 대화 상자 증언",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "저 그, 탐정님. 조사하실 때 복도에 있는 상자는 건들지 말아주세요.",
+          "speakerId": "305",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "상자? 저기 있는 나무 상자 말씀하시는 건가요?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "네. 메이드장님께서 들고 다니시는 상자인데, 치우지 말라고 하시더라고요.",
+          "speakerId": "305",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "무슨 용도의 상자인지는 모르시는 건가요?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_embarrassment",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "네… 저도 그게 뭔지 잘 모르겠지만..",
+          "speakerId": "305",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "일단 메이드장님 명령이라 우선 그 자리에 두고 있습니다.",
+          "speakerId": "305",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "괜히 귀찮은 부스럼 생길 일은 만들고 싶지 않거든요.",
+          "speakerId": "305",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 8,
+          "log": "(상자… 특이하게 생겼구만.)",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_embarrassment",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 9,
+          "log": "그렇군요, 알겠습니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+
+      ]
+    },
+    {
+      "talkID": "1017",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 복도_ 메이드장 대화 (증언)",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "사건 전날 피해자와 무슨 일이 있었습니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "201호 손님께서 저녁에 식사하신 이후 커피를 타 달라 하셨습니다. ",
+          "speakerId": "303",
+          "spriteName": "Della/Della_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "그래서 식사를 끝내실 때쯤 그녀의 커피를 준비해서, 그녀의 방까지 갔다 주었습니다.",
+          "speakerId": "303",
+          "spriteName": "Della/Della_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "메이드장께서 갔다 주신 걸 제가 봤습니다.",
+          "speakerId": "305",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "그렇군요. 그러면 그녀 혹은 201호에서 특이한 점이 있었습니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "아뇨… 그렇게 느낀 것은 없습니다.",
+          "speakerId": "303",
+          "spriteName": "Della/Della_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "알겠습니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+    {
+      "talkID": "1018",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 라운지_ 남자 직원 B 대화 (증언)",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "호텔에서 일하면서 이상한 일이 일어난 적이 있으신가요?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "제가 이 곳 호텔이 지어진 이후 쭉 일해오면서 느낀점은, 델라님께서 예전과 달리 많이 변하셨어요. ",
+          "speakerId": "308",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "인자하시고 너그러우시던 델라님께서 남편분이 돌아가신 이후로, 어느 순간 차가워지고 웃지 않게 되었습니다. ",
+          "speakerId": "308",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "혹시 메이드 장께서는 남편 분과 사이가 좋으셨나요?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "남편분과 사이가 좋았던 걸로 알고 있습니다. 아마 굉장히 슬프실 거예요.",
+          "speakerId": "308",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "아, 그리고 메이드장 님도 걱정이지만, 지배인님도 최근 많이 바쁜 일이 생기셨는지 저와 메이드장에게 일을 맡기시고 외출을 자주 하시더라구요.",
+          "speakerId": "308",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "그 이후 주에 3~4번씩은 늦은 밤에 돌아오시더군요..",
+          "speakerId": "308",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 8,
+          "log": "오시고는 아이고…허리야 하며 허리를 잡으시며 힘들어 하시는 걸 보았습니다.",
+          "speakerId": "308",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 9,
+          "log": "갑작스레 분위기가 달라진 메이드장과 늦은 밤에 자주 외출하는 지배인… 알겠습니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 10,
+          "log": "중요한 정보 감사합니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 11,
+          "log": "뭔가 심상치 않네요.",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+
+    {
+      "talkID": "1019",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 라운지_ 여자 고객 A 대화 (증언)",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "잠시 나갔다 온 사이에 호텔이 소란스러워졌네요.",
+          "speakerId": "309",
+          "spriteName": "Silhouette/WomanCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "girl walk"
+        },
+        {
+          "lineNum": 2,
+          "log": "무슨 일이 있나요?",
+          "speakerId": "309",
+          "spriteName": "Silhouette/WomanCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "피해를 끼치게 되어 면목없습니다 고객님. 현재 살인 사건이 일어나 조사 중이니 양해 부탁드립니다. ",
+          "speakerId": "308",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "저런 끔찍한 일이.. 알겠습니다.",
+          "speakerId": "309",
+          "spriteName": "Silhouette/WomanCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "부디 잘 해결되길 빌어요.",
+          "speakerId": "309",
+          "spriteName": "Silhouette/WomanCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "살인사건이 주변에서 일어난다면 엄청나게 불안할거예요.",
+          "speakerId": "302",
+          "spriteName": "kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "그렇지...",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 11,
+          "log": "반드시 이 사건을 해결해야한다.",
+          "speakerId": "302",
+          "spriteName": "JamesBrennan/JamesBrennan_angry",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+    {
+      "talkID": "1020",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 라운지_ 여자 고객 A 대화 (증언)",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "혹시 시간 괜찮으신가요?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "어이쿠 깜짝아!",
+          "speakerId": "309",
+          "spriteName": "Silhouette/WomanCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "무슨일이시죠?",
+          "speakerId": "309",
+          "spriteName": "Silhouette/WomanCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "저는 탐정 제임스 브래넌입니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "혹시 이 호텔에 대해 소문이나 지내시면서 특별한 일이 있던 적 있으십니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "음.. 제가 겪은 일이 아니지만 제 주변인들이 이 근처에서 해를 입은 적이 있죠.",
+          "speakerId": "309",
+          "spriteName": "Silhouette/WomanCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "몇몇 친구들이나 저는 해를 입은 적은 없는데, 유독 곤란한 상황에 쳐해졌던 친구들은 머리칼이 붉은색이였다던 공통점이 있었어요.",
+          "speakerId": "309",
+          "spriteName": "Silhouette/WomanCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 8,
+          "log": "저는 붉은색은 선호하지 않는 편이라 우연히 살아남은거죠. 저는 검은머리를 더 잘소화한다구요. 하하!",
+          "speakerId": "309",
+          "spriteName": "Silhouette/WomanCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 9,
+          "log": "그분들은 괜찮으십니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 10,
+          "log": "지금은 멀쩡하고말구요. 그당시엔 굉장히 놀랐지만 다행히 주변에 사람들이 도와주었고, 그때 제 지인에게 해를 끼칠려 하던 범인은 그대로 도망갔답니다!",
+          "speakerId": "309",
+          "spriteName": "Silhouette/WomanCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 11,
+          "log": "그나저나 이 호텔은 빨간색을 싫어하는 귀신이라도 들렸나보죠? 아무튼 유령술사님 수고하십니다. 하하핫!",
+          "speakerId": "309",
+          "spriteName": "Silhouette/WomanCustomerSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 12,
+          "log": "…저는 탐정입니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_embarrassment",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 13,
+          "log": "어찌됐든 중요한 정보 매우 감사드립니다",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_embarrassment",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 14,
+          "log": "(빨간 머리의 사람들이 피해를 입는다…)",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_angry",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 15,
+          "log": "(이번 피해자도 빨간 머리…)",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_angry",
           "getItemID": 0,
@@ -459,13 +1388,651 @@
     },
 
     {
-      "talkID": "4001",
-      "sceneName": "MoveArrow",
-      "talkName": "잠겨있는 화면이동 버튼 클릭 시 ",
+      "talkID": "1021",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 라운지_ 조수 일상 대화",
       "lines": [
         {
           "lineNum": 1,
-          "log": "203호에 먼저 들러야해!",
+          "log": "이 호텔은 언뜻 보면 화려하지만 의외로 구식인 면들이 있네요.",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "walk"
+        },
+        {
+          "lineNum": 2,
+          "log": "제가 생각한 것 보다 엄청 깔끔하진 않은 것 같아요.",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "설마...",
+          "speakerId": "302",
+          "spriteName": "kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "재료 값이 아까워서 그런건가?!",
+          "speakerId": "302",
+          "spriteName": "kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+
+        {
+          "lineNum": 5,
+          "log": "하긴 나도 이곳에서 돌아다니면서 느낀 바도 그렇다네.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "신문에 나온 광고보단 비교적 낡았군.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_angry",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+
+      ]
+    },
+
+    {
+      "talkID": "1022",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 주방 보이는 라운지_ 지배인 일상 대화",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "탐정님, 호텔 식사는 어떠셨는지요? ",
+          "speakerId": "304",
+          "spriteName": "HermanHomes/HermanHomes_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "신경 써 주셔서 감사합니다. ",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "만족스럽게 잘 먹었습니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "다행입니다.",
+          "speakerId": "304",
+          "spriteName": "HermanHomes/HermanHomes_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "제가 특별히 신경써서 만들어달라 하였습니다.",
+          "speakerId": "304",
+          "spriteName": "HermanHomes/HermanHomes_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "제가 특별히 신경써서 만들어달라 하였습니다.",
+          "speakerId": "304",
+          "spriteName": "HermanHomes/HermanHomes_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "좋습니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+
+      ]
+    },
+    {
+      "talkID": "1023",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 주방 보이는 라운지_ 지배인 증언 대화",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "호텔 내부에 수상해 보이는 투숙객들이나 직원을 본 적이 있습니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "아…아뇨 수상한 직원이나 고객들은 없었습니다.",
+          "speakerId": "304",
+          "spriteName": "HermanHomes/HermanHomes_embarrassment1",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "허나, 이 호텔에 머물던 고객님들이 어느 날 갑작스레 키를 반납한 채 사라지시거나, 호텔 근처에서 기이한 일들이 일어난 적이 있긴 했습니다.",
+          "speakerId": "304",
+          "spriteName": "HermanHomes/HermanHomes_embarrassment1",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "혹시 그 일에 대해 자세히 알려주실 수 있습니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "201호에 머물던 여성 손님들께서 꼭두새벽에 사라지기도 하셨고, 호텔 뒷 골목쪽에서 사람의 뼈들이 발견되는 일들이 있었습니다.",
+          "speakerId": "304",
+          "spriteName": "HermanHomes/HermanHomes_embarrassment1",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "그래서 이를 탐정과 경찰들에게 수사를 요청드렸지만 아직 해결되지 않았습니다. 저야말로 정말 곤란한 상황이지요.",
+          "speakerId": "304",
+          "spriteName": "HermanHomes/HermanHomes_embarrassment1",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "그렇군요…",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 8,
+          "log": "(이 호텔 무언가 숨겨져 있는 거 같아...)",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_angry",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 9,
+          "log": "조사에 도움을 주셔서 감사합니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+
+      ]
+    },
+    {
+      "talkID": "1024",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 주방 _ 여자 직원 B 대화",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "여기는 들어오시면 안돼요!",
+          "speakerId": "307",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "201호 살인이 일어난 관계로 조사하려 하는 것이니 협조 부탁드립니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_embarrassment",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "아하…그렇군요. 알겠습니다.",
+          "speakerId": "307",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "여긴 손님들의 음식을 다루는 곳이니 부디 주의해 주세요.",
+          "speakerId": "307",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+
+      ]
+    },
+    {
+      "talkID": "1025",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 주방 _ 여자 직원 B  증언 대화",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "호텔에서 택배를 받은 직원을 보신적이 있습니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "시키거나 받은 분들은 없었어요.",
+          "speakerId": "307",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "그 택배가 중요한 물건인지는 모르겠는데… 아 참!",
+          "speakerId": "307",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "지배인님과 함께 호텔에 필요한 자재를 살때마다 저를 먼저 호텔로 보내시더라고요. 그리고 항상 혼자 골목길로 들어가셔요.",
+          "speakerId": "307",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "그 골목길로 들어가면 어디로 가는지 아십니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "음~ 그쪽 방향으로 걸어가면 아마 유흥가 골목이 나오는 걸로 아는데요.",
+          "speakerId": "307",
+          "spriteName": "Silhouette/WomanOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "(지배인이... 유흥가 골목?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_embarrassment",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 8,
+          "log": "… 알겠습니다. 감사합니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_embarrassment",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+
+      ]
+    },
+    {
+      "talkID": "1026",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 주방 _ 남자 직원 C 증언 대화",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "최근 주방에서 의심스러운 정황이 발생했던 적이 있었나요?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "음…의심스러운 일이라..",
+          "speakerId": "311",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "어제 늦은 새벽에 주방 도구들이 떨어지는 소리가 들리더라구요.",
+          "speakerId": "311",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "제가 밤잠이 없는 편이라 무슨 일인가 싶어 주방에 가보면 탁자에 도구들이 올려져 있더군요.",
+          "speakerId": "307",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "도착했을 때 혹시 누군가가 있었습니까?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "아니요? 가보면 아무도 없더라구요.",
+          "speakerId": "311",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "새벽마다 매일 그런건 아니지만, 간간히 불규칙적으로 주방도구들이 떨어지는 소리가 들려요.",
+          "speakerId": "311",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 8,
+          "log": "낡은 호텔이라 저는 그냥 고양이만한 쥐가 돌아다니는거라고 생각해요.",
+          "speakerId": "311",
+          "spriteName": "Silhouette/ManOccupationSilhouette",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 9,
+          "log": "그렇군요. 알겠습니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+
+      ]
+    },
+
+    {
+      "talkID": "1027",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "살인 일러스트 본 이후 주방 _ 메이드장 일상 대화",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "조사는 잘 되어가시는지요?",
+          "speakerId": "303",
+          "spriteName": "Della/Della_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "네. 아직까진 미궁 속이지만, 실마리가 보입니다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "그렇군요",
+          "speakerId": "303",
+          "spriteName": "Della/Della_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "도움이 필요하시다면 저에게 언제든 도움을 요청해주세요. 직원들은 제가 관리하니까요.",
+          "speakerId": "303",
+          "spriteName": "Della/Della_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "그러도록 하죠.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "감사해요",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+    {
+      "talkID": "1028",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "지하실로 가는 통로",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "이곳은… 대체",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "어딘가로 이어져있나보군",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "탐정님…저기에…!",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+    {
+      "talkID": "1029",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "지하실 전 지배인 죽어있는 일러스트",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "이곳은… 대체",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "지금까지 실종된 피해자들이 여기에 있군...",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_angry",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "탐정님…저기에…!",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "저것은...",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_angry",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "......",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_angry",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "지배인의 복장을 입고 있군.",
+          "speakerId": "30",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 7,
+          "log": "이 곳에 살인사건의 결정적 단서가 있을거 같아요.",
+          "speakerId": "301",
+          "spriteName": "Kamilla/Kamilla_angry",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 8,
+          "log": "한번 찾아보죠.",
+          "speakerId": "301",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+    {
+      "talkID": "1030",
+      "sceneName": "SecondFloor_Corridor",
+      "talkName": "지하실 전 지배인 죽어있는 일러스트 이후 _ 조수 증언 대화",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "탐정님, 빨리 와 보세요!! 여기에 일기장이 있어요!",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "어서 보도록 하지.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+
+    {
+      "talkID": "4001",
+      "sceneName": "2층 복도",
+      "talkName": "201호로 가야해!",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "201호로 가야해!",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
@@ -482,24 +2049,34 @@
       "lines": [
         {
           "lineNum": 1,
-          "log": "(덜컹! 덜컹!)",
+          "log": "(문이 잠겨있다.)",
           "speakerId": "",
           "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "locked door"
+        },
+        {
+          "lineNum": 2,
+          "log": "열리지가 않는 군.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         },
         {
-          "lineNum": 2,
-          "log": "잠겨있어서 열리지가 않는 군.",
+          "lineNum": 3,
+          "log": "열쇠가 필요한가봐요!",
           "speakerId": "301",
-          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "spriteName": "Kamilla/Kamilla_smail",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         }
       ]
     },
+
 
     {
       "talkID": "5002",
@@ -508,7 +2085,7 @@
       "lines": [
         {
           "lineNum": 1,
-          "log": "여기에 더 이상 찾을게 없어보이는 군",
+          "log": "더 이상 찾을게 없어보이는 군",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
@@ -521,7 +2098,7 @@
     {
       "talkID": "5003",
       "sceneName": "Anywere",
-      "talkName": "잠겨있을 시 띄우는 메세지",
+      "talkName": "문을 열었을때 띄우는 메세지",
       "lines": [
         {
           "lineNum": 1,
@@ -530,11 +2107,20 @@
           "spriteName": "",
           "getItemID": 0,
           "getItemType": 0,
-          "soundName": ""
+          "soundName": "Locking door open"
         },
         {
           "lineNum": 2,
-          "log": "열렸군! 이제 열 수 있겠어.",
+          "log": "문이 열렸어요!",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "그래,들어가자",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
@@ -544,28 +2130,38 @@
       ]
     },
 
+
     {
       "talkID": "6001",
       "sceneName": "HotelRoom_203",
-      "talkName": "서랍에서 열쇠 획득 시 메세지",
+      "talkName": "주방에서 신문지를 획득 시 메세지",
       "lines": [
         {
           "lineNum": 1,
-          "log": "(드르륵)",
+          "log": "(덜컹)",
           "speakerId": "",
           "spriteName": "",
           "getItemID": 0,
           "getItemType": 0,
-          "soundName": ""
+          "soundName": "kitchen puzzle"
         },
         {
           "lineNum": 2,
-          "log": "뭐지 이 열쇠는? 우리방 열쇠는 아닌 것 같은데...",
+          "log": "이건...신문지?",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
-          "getItemID": 101,
+          "getItemID": 105,
           "getItemType": 0,
-          "soundName": ""
+          "soundNae": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "이 불탄 흔적은 뭐를 의미하는걸까요.",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 105,
+          "getItemType": 0,
+          "soundNae": ""
         }
       ]
     },
@@ -577,7 +2173,7 @@
       "lines": [
         {
           "lineNum": 1,
-          "log": "러그가 피 범벅이 되어있군",
+          "log": "러그에 피가 묻어있군.",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 203,
@@ -594,7 +2190,7 @@
       "lines": [
         {
           "lineNum": 1,
-          "log": "러그위에 이 하얀가루 설마 독인건가?",
+          "log": "이 하얀 가루...독약인가?",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 202,
@@ -611,7 +2207,16 @@
       "lines": [
         {
           "lineNum": 1,
-          "log": "이 깨진 유컵을 통해 독을 마신건가?",
+          "log": "깨진 잔...",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 201,
+          "getItemType": 1,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "무언가를 마시던 도중 살해 당했군.",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 201,
@@ -628,10 +2233,19 @@
       "lines": [
         {
           "lineNum": 1,
-          "log": "이건 시계에 분침? 이게 왜 여기에 있지?",
+          "log": "시계 분침?",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 102,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "설마...",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         }
@@ -645,30 +2259,632 @@
       "lines": [
         {
           "lineNum": 1,
-          "log": "이건 시계에 시침? 이게 왜 여기에 있지?",
+          "log": "이건 시계 시침?",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 104,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 2,
+          "log": "시침이 없는 시계라도 있는걸까요?",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
           "getItemID": 104,
           "getItemType": 0,
           "soundName": ""
         }
       ]
     },
-
     {
       "talkID": "6007",
-      "sceneName": "HotelRoom_201",
-      "talkName": "",
+      "sceneName": "Anywere",
+      "talkName": "가방이 열렸을때 대화",
       "lines": [
         {
           "lineNum": 1,
-          "log": "사람, 전등, 개... 이건 도대체 뭘 나타내는 거지?",
+          "log": "(철컥!)",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "bag open"
+        },
+        {
+          "lineNum": 2,
+          "log": "가방이 열렸어요!",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_smail",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "열쇠? 이건 어디에 쓰는 열쇠일까요?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 101,
+          "getItemType": 0,
+          "soundName": ""
+        }
+      ]
+    },
+    {
+      "talkID": "6008",
+      "sceneName": "Anywere",
+      "talkName": "시계 분침,시침 넣었을 때",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "(숨겨진 문이 열린다.)",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "Secret_door"
+        },
+        {
+          "lineNum": 2,
+          "log": "이건?",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "숨겨진 통로인가?",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "...안으로 들어가지",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
           "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         }
+      ]
+    },
+    {
+      "talkID": "6009",
+      "sceneName": "Anywere",
+      "talkName": "일기장을 확인할 때 대화",
+      "lines": [
+        {
+          "lineNum": 1,
+          "log": "1884년 4월 15일",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "paper"
+        },
+        {
+          "lineNum": 2,
+          "log": "그와 함께 호텔을 만들었다",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 3,
+          "log": "호텔 이름은 스칼렛.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 4,
+          "log": "호텔에서 처음 만나 사랑을 싹틔운 우리는 또다른 호텔로부터 새로운 삶을 시작한다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 5,
+          "log": "‘그와 함께'… 이 일기장은 여성의 것이군",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 6,
+          "log": "1884년 4월 25일",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "paper"
+        },
+        {
+          "lineNum": 7,
+          "log": "이 호텔에 지하실이 있었다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 8,
+          "log": "아마 그이가 창고용으로 만든 거 같다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 9,
+          "log": "많이 넓고 화로도 있어 우리만의 방으로 써도 괜찮은 거 같아 보인다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 10,
+          "log": "‘우리’…",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 11,
+          "log": "부부사이 인가봐요.",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 12,
+          "log": "1884년 10월 14일",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "paper"
+        },
+        {
+          "lineNum": 13,
+          "log": "최근에 그와 함께 하는 시간이 줄어든 거 같다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 14,
+          "log": "…남편이 수상하다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 15,
+          "log": "그는 더 이상 나를 사랑하지 않는 것인가.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 16,
+          "log": "젊은 시절 그와 함께했던 행복한 추억들이 떠올라서 ",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 17,
+          "log": "참을 수 없을만큼 힘든 나날들을 보내고 있다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 18,
+          "log": "1884년 12월 25일 ",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "paper"
+        },
+        {
+          "lineNum": 19,
+          "log": "그와 함께 크리스마스를 보내려 기대렸던 순간들",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 20,
+          "log": "하지만 그 여자가 모든 걸 망가뜨렸어.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 21,
+          "log": "그는 나를 버리고 그 여자에게 갔다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 22,
+          "log": "그녀가 젊다는 이유로",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 23,
+          "log": "그녀가 예쁘다는 이유로 ",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 24,
+          "log": "특이한 머리 색 때문에 ",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 25,
+          "log": "그게 그녀의 매력이 였던건가?",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 26,
+          "log": "…죽어 죽어 죽어 죽어 죽어 죽어 죽어 죽어 죽어 죽어 죽어 죽어 죽어 죽어 죽어",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 27,
+          "log": "… …",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 28,
+          "log": "그를 만나야겠어.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 29,
+          "log": "내가 알던 그라면… 아니겠지",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 30,
+          "log": "그가…바람 핀 거 같네요…",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_angry",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 31,
+          "log": "1884년 12월 29일",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "paper"
+        },
+        {
+          "lineNum": 32,
+          "log": "죽였어 그를 결국 ",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 33,
+          "log": "그녀와 함께 있었다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 34,
+          "log": "결국 죽이고 말았다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 35,
+          "log": "화분으로 그를 죽일 생각은 없었어.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 36,
+          "log": "나는 그럴 의도는 없었다고…",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 37,
+          "log": "오히려 내 가슴을 짖밟은건 그이였잖아…!!!",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+
+        {
+          "lineNum": 38,
+          "log": "...",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+
+        {
+          "lineNum": 39,
+          "log": "...",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+
+        {
+          "lineNum": 40,
+          "log": "1885년 1월 9일",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": "paper"
+        },
+
+        {
+          "lineNum": 41,
+          "log": "나는 그와 함께 있던 그녀도 결국 죽이고 말았다",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+
+        {
+          "lineNum": 42,
+          "log": "그가 죽었다는 결국 눈치챈 거 같으니 결국 죽일 수 밖에…",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+
+        {
+          "lineNum": 43,
+          "log": "이 호텔 지하에 그녀를 죽이고 나는 그의 시신을 지하에 앉혀뒀다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+
+        {
+          "lineNum": 44,
+          "log": "그래도…내가 사랑하는",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+
+        {
+          "lineNum": 45,
+          "log": "나는 그이와 함께 있을거다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+
+        {
+          "lineNum": 46,
+          "log": "영원히…",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 47,
+          "log": "그와 나의 보금자리를 숨겨둘거다.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 48,
+          "log": "아무도 방해 못하게…",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 49,
+          "log": "이곳을 들키지 않으려면 사람들이 오지 않도록 막아야 해.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+
+        {
+          "lineNum": 50,
+          "log": "여자 지배인 보다는… 메이드장?",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 51,
+          "log": "...그래, 메이드장이 좋겠어.",
+          "speakerId": "",
+          "spriteName": "",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 52,
+          "log": "그렇다는건 범인은…",
+          "speakerId": "302",
+          "spriteName": "kamilla/Kamilla_surprised",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 53,
+          "log": "맞아… 그녀였어…",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 54,
+          "log": "델라… 메이드장이다.",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_angry",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 55,
+          "log": "...",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 56,
+          "log": "이 일기장.. 그녀에게 가져다줄까요?",
+          "speakerId": "302",
+          "spriteName": "Kamilla/Kamilla_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        },
+        {
+          "lineNum": 57,
+          "log": "...그러지",
+          "speakerId": "301",
+          "spriteName": "JamesBrennan/JamesBrennan_nomal",
+          "getItemID": 0,
+          "getItemType": 0,
+          "soundName": ""
+        }
+
+
+
       ]
     }
   ]

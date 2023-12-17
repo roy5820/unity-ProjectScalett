@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d7e00da0c2c7709448467ad55cc064b5
+guid: 197e1777a1873dd45b403062e05d9bfa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,8 +45,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
-  spritePivot: {x: 0.5, y: 0}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -131,19 +131,19 @@ TextureImporter:
       name: JamesBrennan_embarrassment_0
       rect:
         serializedVersion: 2
-        x: 119
-        y: 498
-        width: 1300
-        height: 1400
-      alignment: 9
-      pivot: {x: 0.5016673, y: 0.0030311802}
+        x: 60
+        y: 0
+        width: 1402
+        height: 1402
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0a5f12b290b6934bb6cbfdaf0c651df
-      internalID: -739146539
+      spriteID: 8b7f600f07b9b3e4da6c51be6bfea5c9
+      internalID: -2083546793
       vertices: []
       indices: 
       edges: []
@@ -159,7 +159,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      JamesBrennan_embarrassment_0: -739146539
+      JamesBrennan_embarrassment_0: -2083546793
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

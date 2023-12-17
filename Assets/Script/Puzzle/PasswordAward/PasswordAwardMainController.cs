@@ -11,7 +11,11 @@ public class PasswordAwardMainController : MonoBehaviour
     string clearPassword = "2523";//클리어 비밀번호
 
     [SerializeField]
-    GameObject GetClearItemObj;//클리어시 활성화할 클리어 아이템 획득 오브젝트
+    int GetClearItemID;//클리어시 획득 아이템 ID
+
+    [SerializeField]
+    int GetClearItemType;//클리어시 획득 아이템 타입
+
     //전구들을 관리하기위한 LightBulb 객체 선언
     [System.Serializable]
     public class NumberBoard
@@ -25,7 +29,6 @@ public class PasswordAwardMainController : MonoBehaviour
 
     [SerializeField]
     private string dataName = "puzzle_passwordPuzzle"; //데이터베이스에 저장될 데이터명
-
     // Start is called before the first frame update
     void Start()
     {
@@ -65,8 +68,11 @@ public class PasswordAwardMainController : MonoBehaviour
         //퍼즐 완료 상태일 경우
         if(isPasswordAwardSatus == 1)
         {
-            GetClearItemObj.SetActive(true);//클리어 아이템 획득 오브젝트 활성화
-            Destroy(this.gameObject);//해당 오브젝트 삭제
+            //해당 퍼즐 상태 값을 데이터 베이스에 저장
+            GameManager.instance.ControllObjStatusData(1, dataName, isPasswordAwardSatus);
+            GameManager.instance.AddItem(GetClearItemType, GetClearItemID);//아이템 획득
+            PlayerUIController.instance.OpenItemInspectorWindow(GetClearItemType, GetClearItemID);
+            this.gameObject.SetActive(false);
         }
     }
 
@@ -100,9 +106,9 @@ public class PasswordAwardMainController : MonoBehaviour
         ChageForNum();
     }
 
-    private void OnDestroy()
+    //해당 팝업창을 닫는 함수
+    public void CloseThisPopup()
     {
-        //해당 퍼즐 상태 값을 데이터 베이스에 저장
-        GameManager.instance.ControllObjStatusData(1, dataName, isPasswordAwardSatus);
+        this.gameObject.SetActive(false);
     }
 }

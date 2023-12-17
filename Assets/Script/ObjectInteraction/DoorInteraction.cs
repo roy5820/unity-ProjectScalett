@@ -12,6 +12,7 @@ public class DoorInteraction : MonoBehaviour
 
     public int LockMessageID;//잠김 메세지 ID
     public int UnLockMessageID;//잠김 해제 메세지 ID
+    public string UnLockCutScenePreName = null;//잠김 해제 컷씬 프리펩 이름
 
     private int isStatus = 0; //현제 오브젝트 상태 값 0: 상호작용X ,1: 상호작용O
     private string dataName = null; //데이터베이스에 저장될 데이터명
@@ -65,13 +66,16 @@ public class DoorInteraction : MonoBehaviour
                 SceneManager.LoadScene(SceneName);
         }
         //문이 잠겨 있고 열쇠가 있으면 잠금 해제
-        else if (isLock && KeyItemId == GameManager.instance.SelectItemId)
+        else if (isLock && (KeyItemId == 0 || (KeyItemId == GameManager.instance.SelectItemId)))
         {
             isLock = false;//잠금 상태 해제
             isStatus = 1;//상호작용 상태 1로 변경
+            //컷씬 출력
+            if (UnLockCutScenePreName != null)
+                PlayerUIController.instance.OpenCutSceneWindow(UnLockCutScenePreName, this.gameObject, "OpenDoor", SceneName);
             //메세지 출력
-            if (UnLockMessageID > 0)
-                PlayerUIController.instance.OpenChatWindow(UnLockMessageID, null);
+            else if (UnLockMessageID > 0)
+                PlayerUIController.instance.OpenChatWindow(UnLockMessageID);
 
             //변경할 이미지 및 오브젝트가 존재할 시 변경
             if (ChangeObj != null && ChangeImg != null)

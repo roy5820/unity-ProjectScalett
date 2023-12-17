@@ -91,7 +91,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05e7f5794ebcb8d4383edab48f3db3a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChatLogID: 1010
+  CutScenes:
+  - ChatLogID: 1028
+    isOpenLog: 0
+    CutSceneImgName: BasementEntrance
+  - ChatLogID: 1029
+    isOpenLog: 0
+    CutSceneImgName: BasementCutscene
+  CutSceneImgObj: {fileID: 3345085327687910205}
+  CallBackObj: {fileID: 0}
+  CallBackFuntion: 
+  CallBackParameter: 
 --- !u!114 &4964939281734205867
 MonoBehaviour:
   m_ObjectHideFlags: 0

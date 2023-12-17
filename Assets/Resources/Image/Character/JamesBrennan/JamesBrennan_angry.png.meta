@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41af830d62673e349aa8da1646ac329a
+guid: 13a89dbe7dd76ae4f84c46cfc5144b2a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,8 +45,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
-  spritePivot: {x: 0.5, y: 0}
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -131,19 +131,19 @@ TextureImporter:
       name: JamesBrennan_angry_0
       rect:
         serializedVersion: 2
-        x: 119
-        y: 498
-        width: 1300
-        height: 1400
-      alignment: 9
-      pivot: {x: 0.5016673, y: -0.00006519863}
+        x: 60
+        y: 0
+        width: 1402
+        height: 1402
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbd415aa1b8c21f45a4ac9dbfac14400
-      internalID: 1079779174
+      spriteID: c1c6b0108e1260d48a6b025ac9f9ad93
+      internalID: -578881296
       vertices: []
       indices: 
       edges: []
@@ -159,7 +159,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      JamesBrennan_angry_0: 1079779174
+      JamesBrennan_angry_0: -578881296
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -521,10 +521,10 @@ MonoBehaviour:
   - {fileID: 1843159403}
   - {fileID: 2018171561}
   ClearCookwaresParents:
+  - {fileID: 1946442702}
   - {fileID: 1202255349}
   - {fileID: 646777452}
   - {fileID: 1732542035}
-  - {fileID: 1946442702}
 --- !u!1 &646777451
 GameObject:
   m_ObjectHideFlags: 0
