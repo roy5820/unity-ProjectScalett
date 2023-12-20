@@ -1920,7 +1920,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: HotelRoom_203
+          m_StringArgument: StartScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1546148403
@@ -2220,6 +2220,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882655176}
   m_CullTransparentMesh: 1
+--- !u!1001 &2001144171
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2743571944018983040, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: bgm
+      value: 
+      objectReference: {fileID: 8300000, guid: 11c7164d7955c98499a9f168c568f738, type: 3}
+    - target: {fileID: 2743571944018983042, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_Name
+      value: SetBgm
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.050419
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5266976
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 88.59093
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
 --- !u!1 &2118181105
 GameObject:
   m_ObjectHideFlags: 0

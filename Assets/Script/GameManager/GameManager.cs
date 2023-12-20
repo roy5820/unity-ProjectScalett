@@ -115,8 +115,13 @@ public class GameManager : MonoBehaviour
         List<DataIds> GetDataBase = null;//데이터 베이스에서 데이터를 받아 넣을 변수
 
         //아이템 중복 체크, 이미 있을 경우 함수 종료
-        if (ChkItem(ItemType, ItemId)) return;
-
+        if (ChkItem(ItemType, ItemId))
+        {
+            Debug.Log("중복");
+            return;
+        }
+            
+        
         //아이템 타입별로 List 설정
         switch (ItemType)
         {
@@ -156,7 +161,10 @@ public class GameManager : MonoBehaviour
 
                 //현제 위치가 데이터의 끝일경우 NowData의 값을 리스트 끝에 추가
                 if (i == DataBaseCnt - 1)
+                {
                     GetDataBase.Add(ComparativeData);
+                }
+                    
             }
         }
         else

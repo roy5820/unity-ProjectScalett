@@ -252,7 +252,7 @@
           "spriteName": "",
           "getItemID": 0,
           "getItemType": 0,
-          "soundName": ""
+          "soundName": "locked door"
         },
         {
           "lineNum": 2,
@@ -552,7 +552,7 @@
           "spriteName": "Silhouette/ManOccupationSilhouette",
           "getItemID": 0,
           "getItemType": 0,
-          "soundName": "Knock"
+          "soundName": ""
         },
         {
           "lineNum": 2,
@@ -655,8 +655,8 @@
           "log": "(어디선가 소란스러운 소리가 들린다.)",
           "speakerId": "",
           "spriteName": "",
-          "getItemID": 0,
-          "getItemType": 0,
+          "getItemID": 310,
+          "getItemType": 2,
           "soundName": "Hullbaloo"
         },
         {
@@ -709,7 +709,7 @@
           "log": "사건이 사건인지라 손님들도 많이 민감할거다. 우리가 최대한 빠르게 해결하도록 하지.",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
-          "getItemID": 305,
+          "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         }
@@ -805,8 +805,8 @@
           "log": "탐정님, 여기 커피 한잔 드세요.",
           "speakerId": "305",
           "spriteName": "Silhouette/WomanOccupationSilhouette",
-          "getItemID": 0,
-          "getItemType": 0,
+          "getItemID": 305,
+          "getItemType": 2,
           "soundName": "water"
         },
         {
@@ -2219,8 +2219,8 @@
           "log": "무언가를 마시던 도중 살해 당했군.",
           "speakerId": "301",
           "spriteName": "JamesBrennan/JamesBrennan_nomal",
-          "getItemID": 201,
-          "getItemType": 1,
+          "getItemID": 0,
+          "getItemType": 0,
           "soundName": ""
         }
       ]
@@ -2271,7 +2271,7 @@
           "log": "시침이 없는 시계라도 있는걸까요?",
           "speakerId": "302",
           "spriteName": "Kamilla/Kamilla_nomal",
-          "getItemID": 104,
+          "getItemID": 0,
           "getItemType": 0,
           "soundName": ""
         }

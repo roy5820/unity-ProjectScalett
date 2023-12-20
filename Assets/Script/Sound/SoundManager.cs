@@ -41,15 +41,20 @@ public class SoundManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
-    
+    //bgm 재생하는 함수
     public void BgSoundPlay(AudioClip clip)
     {
-        bgSound.clip = clip;
-        bgSound.loop = true;
-        bgSound.volume = 1.0f;
-        bgSound.Play();
+        //적용할려는 bgm이 이미 적용중이 아니면 교체
+        Debug.Log(bgSound.clip);
+        if(bgSound.clip != clip)
+        {
+            bgSound.clip = clip;
+            bgSound.loop = true;
+            bgSound.volume = 1.0f;
+            bgSound.Play();
+        }
     }
-
+    //효과음 재생하는 함수
     public void SfxSoundPlay(AudioClip clip)
     {
         sfxSound.clip = clip;

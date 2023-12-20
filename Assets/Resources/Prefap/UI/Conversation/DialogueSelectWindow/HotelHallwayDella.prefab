@@ -298,9 +298,10 @@ MonoBehaviour:
       Button: {fileID: 1713326415420607056}
       KeyID: 204
       LogID: 1017
-      GetTestimonyID: 0
+      GetTestimonyID: 30401
       isStatus: 2
-      BtnText: "\uB300\uD654\uD558\uAE30"
+      BtnText: "\uD53C\uD574\uC790\uC5D0 \uB300\uD574\uC11C"
+  TalkerID: 303
 --- !u!114 &8886947563516561429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,7 +593,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uB300\uD654\uD558\uAE30"
+  m_Text: "\uC0AC\uAC74\uC5D0 \uB300\uD574\uC11C"
 --- !u!1 &8122169920276051219
 GameObject:
   m_ObjectHideFlags: 0

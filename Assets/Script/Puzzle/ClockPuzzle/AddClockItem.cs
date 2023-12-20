@@ -8,8 +8,8 @@ public class AddClockItem : MonoBehaviour
     private string dataName = "puzzle_ClockPuzzle_AddItem"; //데이터베이스에 저장될 데이터명
 
     //시계 분, 시 침 활성화 여부
-    int AddItem1 = 0; //분침
-    int AddItem2 = 0; //시침
+    int AddItem1 = 0; //시침 
+    int AddItem2 = 0; //분침
 
     //활성화할 시, 분침 오브젝트
     public GameObject HourHourHand;

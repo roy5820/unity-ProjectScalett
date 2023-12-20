@@ -796,7 +796,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &1767875067
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -890,7 +890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CutScenePreName: DellaDiary
-  SceneName: MainTitle
+  SceneName: EndScene
 --- !u!114 &1867979718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1107,3 +1107,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9f0382fa50485644895a3f49e967011, type: 3}
+--- !u!1001 &2146923701
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2743571944018983040, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: bgm
+      value: 
+      objectReference: {fileID: 8300000, guid: 9dd0e88bcf15dde43a3ac9b5617375ae, type: 3}
+    - target: {fileID: 2743571944018983042, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_Name
+      value: SetBgm
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.050419
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5266976
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 88.59093
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743571944018983043, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f1f7d8ca94783c44f9a876e268c743e4, type: 3}

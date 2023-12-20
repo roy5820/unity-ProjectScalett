@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainTitle.unity
     guid: 4077544640397154094badd7d56b9882
   - enabled: 1
+    path: Assets/Scenes/CartoonScene/StartScene.unity
+    guid: e1fde488f8a7b344784fabca05f40346
+  - enabled: 1
     path: Assets/Scenes/SecondFloor/HotelRoom_203/HotelRoom_203.unity
     guid: de43d656836fb604bac9909a2ebd71b5
   - enabled: 1
@@ -59,4 +62,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cellar/Cellar1.unity
     guid: 1a9478b6e66507e4abe636a79202a4b9
+  - enabled: 1
+    path: Assets/Scenes/CartoonScene/EndScene.unity
+    guid: 45aca462bd65417419a3ea491c8937a9
+  - enabled: 1
+    path: Assets/Scenes/CartoonScene/EndingCradit.unity
+    guid: 1e6e2224d163b794eb9add301ad86a4c
   m_configObjects: {}

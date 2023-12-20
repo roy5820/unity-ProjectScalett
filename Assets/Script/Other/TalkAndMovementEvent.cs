@@ -14,6 +14,9 @@ public class TalkAndMovementEvent : MonoBehaviour
 
     public void MovementScene()
     {
+        Destroy(GameManager.instance.gameObject);
+        
         SceneManager.LoadScene(SceneName);
+
     }
 }

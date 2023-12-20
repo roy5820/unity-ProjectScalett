@@ -424,13 +424,14 @@ MonoBehaviour:
       GetTestimonyID: 0
       isStatus: 0
       BtnText: "\uC544\uAE4C \uC77C\uC5D0 \uB300\uD558\uC5EC"
-    - ButtonIndex: 2
+    - ButtonIndex: 0
       Button: {fileID: 2801441090271551313}
       KeyID: 0
       LogID: 1010
-      GetTestimonyID: 0
+      GetTestimonyID: 30601
       isStatus: 0
       BtnText: "\uC218\uC0C1\uD55C \uC77C\uC5D0 \uB300\uD558\uC5EC"
+  TalkerID: 306
 --- !u!114 &8886947563516561429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -602,8 +603,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 235, y: 250}
-  m_SizeDelta: {x: 450, y: 500}
+  m_AnchoredPosition: {x: 225, y: 225}
+  m_SizeDelta: {x: 450, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7989079058375031041
 CanvasRenderer:

@@ -32,6 +32,8 @@ public class DialogusSelectionController : MonoBehaviour
     private string dataName = null; //데이터베이스에 저장될 데이터명
 
     private string ImgPath = "Image/UI/Button/Conversation/";//버튼 이미지 가져올 경로
+    [SerializeField]
+    private int TalkerID;//말하는 사람 ID
 
     private void Start()
     {
@@ -62,7 +64,10 @@ public class DialogusSelectionController : MonoBehaviour
             GameManager.instance.ControllObjStatusData(1, dataName + BtnData.ButtonIndex, 1);//버튼 상태를 1(읽음)으로 설정
             //획득할 증언이 존재할 경우 인벤토리에 추가
             if (BtnData.GetTestimonyID > 0)
-                GameManager.instance.AddItem(3, BtnData.GetTestimonyID);
+            {
+                GameManager.instance.AddItem(3, BtnData.GetTestimonyID, TalkerID);
+            }
+                
         }
         else if (BtnData.isStatus == 2)
         {

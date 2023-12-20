@@ -431,6 +431,7 @@ MonoBehaviour:
       GetTestimonyID: 31001
       isStatus: 2
       BtnText: "\uD638\uD154\uC5D0 \uB300\uD558\uC5EC"
+  TalkerID: 310
 --- !u!114 &8886947563516561429
 MonoBehaviour:
   m_ObjectHideFlags: 0
