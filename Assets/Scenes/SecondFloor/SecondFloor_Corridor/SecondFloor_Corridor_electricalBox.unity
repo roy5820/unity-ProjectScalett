@@ -1872,6 +1872,10 @@ PrefabInstance:
       value: electricalPuzzle
       objectReference: {fileID: 0}
     - target: {fileID: 1685193034711979250, guid: 438589bd721c5a64b9ff9cb3a45d5579, type: 3}
+      propertyPath: ClearSfx
+      value: 
+      objectReference: {fileID: 8300000, guid: 47683789d77d63d458f0ba1190822773, type: 3}
+    - target: {fileID: 1685193034711979250, guid: 438589bd721c5a64b9ff9cb3a45d5579, type: 3}
       propertyPath: turnOnBtnImg
       value: 
       objectReference: {fileID: 21300000, guid: 28b883d9bd73f8440b301cb6f5dbdae5, type: 3}

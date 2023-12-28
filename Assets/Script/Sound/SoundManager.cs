@@ -45,7 +45,6 @@ public class SoundManager : MonoBehaviour
     public void BgSoundPlay(AudioClip clip)
     {
         //적용할려는 bgm이 이미 적용중이 아니면 교체
-        Debug.Log(bgSound.clip);
         if(bgSound.clip != clip)
         {
             bgSound.clip = clip;

@@ -29,7 +29,8 @@ public class electricBoxMainController : MonoBehaviour
     public Sprite turnOnBtnImg;//켜진 버튼 이미지
     public Sprite turnOffBtnImg;//꺼진 버튼 이미지
 
-
+    [SerializeField]
+    private AudioClip ClearSfx = null;//재생할 클리어 시 효과음
 
     // Start is called before the first frame update
     void Start()
@@ -71,9 +72,14 @@ public class electricBoxMainController : MonoBehaviour
                 }
             }
 
-            //전구가 전부 켜진경 퍼즐 완료 상대로 전환
+            //전구가 전부 켜진경 퍼즐 완료 상대로 전환 및 효과음 재생
             if (turnOnBulbCnt == lightBulbs.Count)
+            {
+                if(ClearSfx != null)
+                    SoundManager.instance.SfxSoundPlay(ClearSfx);
                 isElectricBoxSatus = 1;
+            }
+                
         }
         //퍼즐 완료 상태일 경우
         if(isElectricBoxSatus == 1)
