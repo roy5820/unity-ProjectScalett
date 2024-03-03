@@ -17,6 +17,12 @@ public class ItemInspectorController : MonoBehaviour
         LoadItem(ItemType, ItemID);
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Space))
+            OnCloseItemInspector();
+    }
+
     //아이템 Type과 ID로 아이템 이미지 부과설명 출력
     private void LoadItem(int itemType, int itemID)
     {

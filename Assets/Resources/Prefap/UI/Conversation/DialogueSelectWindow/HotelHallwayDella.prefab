@@ -298,7 +298,7 @@ MonoBehaviour:
       Button: {fileID: 1713326415420607056}
       KeyID: 204
       LogID: 1017
-      GetTestimonyID: 30401
+      GetTestimonyID: 30301
       isStatus: 2
       BtnText: "\uD53C\uD574\uC790\uC5D0 \uB300\uD574\uC11C"
   TalkerID: 303

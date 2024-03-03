@@ -29,6 +29,14 @@ public class ChatWindowController : MonoBehaviour
         UpdateChatLog(ThisLineNum);//대화로그 화면에 뿌리기
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            OnChangeChatLog();
+        }
+    }
+
     public void UpdateChatLog(int NowLineNum)
     {
         //null체크

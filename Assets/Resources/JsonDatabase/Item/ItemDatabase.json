@@ -158,17 +158,17 @@
       "additionalExplanation": "책장에 일기장이 보인다. 가서 읽어보자."
     },
     {
-      "id": "30301",
+      "id": "30401",
       "CharcterId": "304",
       "additionalExplanation": "사건 발생 전 급히 외출하였다. 이유는 말해줄 수 없다."
-    } ,
+    },
     {
-      "id": "30302",
+      "id": "30402",
       "CharcterId": "304",
       "additionalExplanation": "201호에 머물던 손님들이 사라지거나, 골목길에서 사람들의 유해를 발견한 일들이 있었다."
     },
     {
-      "id": "30401",
+      "id": "30301",
       "CharcterId": "303",
       "additionalExplanation": "201호 손님에게 커피를 타 주었다."
     },

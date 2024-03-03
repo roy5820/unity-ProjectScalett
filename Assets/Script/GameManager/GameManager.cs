@@ -117,7 +117,6 @@ public class GameManager : MonoBehaviour
         //아이템 중복 체크, 이미 있을 경우 함수 종료
         if (ChkItem(ItemType, ItemId))
         {
-            Debug.Log("중복");
             return;
         }
             

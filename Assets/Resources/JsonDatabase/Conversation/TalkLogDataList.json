@@ -1077,8 +1077,8 @@
           "log": "제가 이 곳 호텔이 지어진 이후 쭉 일해오면서 느낀점은, 델라님께서 예전과 달리 많이 변하셨어요. ",
           "speakerId": "308",
           "spriteName": "Silhouette/ManOccupationSilhouette",
-          "getItemID": 0,
-          "getItemType": 0,
+          "getItemID": 308,
+          "getItemType": 2,
           "soundName": ""
         },
         {
@@ -1175,8 +1175,8 @@
           "log": "잠시 나갔다 온 사이에 호텔이 소란스러워졌네요.",
           "speakerId": "309",
           "spriteName": "Silhouette/WomanCustomerSilhouette",
-          "getItemID": 0,
-          "getItemType": 0,
+          "getItemID": 309,
+          "getItemType": 2,
           "soundName": "girl walk"
         },
         {
@@ -1234,7 +1234,7 @@
           "soundName": ""
         },
         {
-          "lineNum": 11,
+          "lineNum": 8,
           "log": "반드시 이 사건을 해결해야한다.",
           "speakerId": "302",
           "spriteName": "JamesBrennan/JamesBrennan_angry",
@@ -1621,8 +1621,8 @@
           "log": "여기는 들어오시면 안돼요!",
           "speakerId": "307",
           "spriteName": "Silhouette/WomanOccupationSilhouette",
-          "getItemID": 0,
-          "getItemType": 0,
+          "getItemID": 307,
+          "getItemType": 2,
           "soundName": ""
         },
         {
@@ -1754,8 +1754,8 @@
           "log": "음…의심스러운 일이라..",
           "speakerId": "311",
           "spriteName": "Silhouette/ManOccupationSilhouette",
-          "getItemID": 0,
-          "getItemType": 0,
+          "getItemID": 311,
+          "getItemType": 2,
           "soundName": ""
         },
         {

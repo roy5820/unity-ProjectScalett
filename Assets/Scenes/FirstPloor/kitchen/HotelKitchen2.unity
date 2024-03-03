@@ -405,10 +405,18 @@ PrefabInstance:
     - target: {fileID: 1925124832344855707, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 130623d6153aaa343bcfafa76155a1c8, type: 3}
+      objectReference: {fileID: 21300000, guid: 2ecbb82582d52eb4e9dda8ea7b0c538d, type: 3}
+    - target: {fileID: 3014731605489257619, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3898771833777308544, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: SceneName
       value: HotelKitchen1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5384055899196612165, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6093422341473346701, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: m_IsActive
@@ -417,7 +425,7 @@ PrefabInstance:
     - target: {fileID: 6107755227834537530, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: DialogueSelectPre
       value: 
-      objectReference: {fileID: 5728027424786395748, guid: eb896d5529937e34383fc922e5678fc1, type: 3}
+      objectReference: {fileID: 5728027424786395748, guid: 56c1977c96c6f544397ba450e5bdb2cd, type: 3}
     - target: {fileID: 7159526402436249156, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: SecondFloor_Corridor

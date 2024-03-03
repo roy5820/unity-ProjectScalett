@@ -162,7 +162,6 @@ public class PlayerUIController : MonoBehaviour
             if (parameter != null)
                 CutScenePre.GetComponent<CutSceneController>().CallBackParameter = parameter;
         }
-        Debug.Log(1);
         GameObject Prefap = Instantiate(CutScenePre, this.transform);//ÄÆ¾À ÇÁ¸®Æé »ý¼º
     }
 

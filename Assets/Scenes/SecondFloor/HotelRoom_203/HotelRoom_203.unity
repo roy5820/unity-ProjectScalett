@@ -637,7 +637,7 @@ PrefabInstance:
     - target: {fileID: 6107755227834537530, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: DialogueSelectPre
       value: 
-      objectReference: {fileID: 5728027424786395748, guid: 26a4499fe30ca9f419635f12f47adae3, type: 3}
+      objectReference: {fileID: 5728027424786395748, guid: ffeb51aceb3dcf144a0a7da6211adbe4, type: 3}
     - target: {fileID: 6850346320904197495, guid: 8619d6cdf0a7ff64094352ef680745ae, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
